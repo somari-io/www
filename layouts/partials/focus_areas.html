@@ -1,0 +1,37 @@
+{{ $focus_areas := .Site.Params.focus_areas }}
+
+<section class="py-10 py-lg-20 bg-bg-1" id="focus_areas">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-lg-8 col-xl-7 col-xxl-6">
+                <h2 class="display-5 mb-6 text-light-1" data-aos="fade-down" data-aos-delay="0">
+                    {{ $focus_areas.title }}
+                </h2>
+                <p class="fs-2 mb-8 mb-md-15 text-light-2" data-aos="fade-down" data-aos-delay="250">
+                    {{ $focus_areas.baseline }}
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="mb-10 col-12" data-aos="fade-down" data-aos-delay="250">
+                <div class="border-bottom opacity-30 border-bottom-light-1">
+                </div>
+            </div>
+            {{ range $focus_areas.areas }}
+                <div class="mb-8 mb-md-0 col-md-3 col-sm-6" data-aos="fade-down" data-aos-delay="{{ .delay }}">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="5em" viewBox="0 0 640 512" class="mb-4 fill-dark-1">
+                        <path
+                            d="{{ .icon }}">
+                        </path>
+                    </svg>
+                    <h5 class="mb-4 text-light-1">
+                        {{ .name }}
+                    </h5>
+                    <p class="mb-0 text-light-2 fs-3">
+                        {{ .description }}
+                    </p>
+                </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
