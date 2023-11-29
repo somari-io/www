@@ -1,0 +1,29 @@
+<section class="py-10 py-lg-20 text-center text-md-start bg-bg-1" id="features">
+    <div class="container">
+        <div class="row flex-column">
+            <div class="col-md-10 col-lg-8 col-xl-7 col-xxl-6">
+                <h2 class="display-5 mb-6 text-light-1" data-aos="fade-down" data-aos-delay="0">
+                    {{ .Site.Params.features.title }}
+                </h2>
+                <p class="fs-2 mb-8 mb-md-15 text-light-2" data-aos="fade-down" data-aos-delay="250">
+                    {{ .Site.Params.features.subtitle }}
+                </p>
+            </div>
+        </div>
+        <div class="row justify-content-center justify-content-sm-start">
+            {{ range .Site.Params.features.features }}
+                <div class="mb-15 col-10 col-sm-6 col-md-5 col-lg-4" data-aos="fade-down" data-aos-delay="{{ .delay }}">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="2.5em" viewBox="0 0 640 512" class="fill-action-1 mb-6">
+                        <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                        <path
+                            d="{{ .icon }}">
+                        </path>
+                    </svg>
+                    <h5 class="mb-4 text-light-1">
+                        {{ .name }}
+                    </h5>
+                </div>
+            {{ end }}
+        </div>
+    </div>
+</section>

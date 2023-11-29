@@ -1,0 +1,86 @@
+<section class="py-10 py-lg-20 text-center bg-bg-1" id="team">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 col-xl-8">
+                <h2 class="display-5 mb-6 text-light-1" data-aos="fade-down" data-aos-delay="0">
+                    The Executive Team
+                </h2>
+            </div>
+            <div class="col-md-9 col-lg-7 col-xl-6 col-xxl-5 mb-10">
+                <p class="fs-2 mb-0 text-light-2" data-aos="fade-down" data-aos-delay="150">
+                    We're building a team that combines senior sector and technical expertise.
+                </p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            {{ range .Site.Params.team.members }}
+                <div class="col-sm-7 col-md-4 mb-12 mb-md-0" data-aos="fade-down" data-aos-delay="400">
+                    <img src="{{ .photo }}" alt="" class="rounded-circle mb-6 img-fluid" srcset="i/gui.png 2x">
+                    <h4 class="mb-2 text-light-1">
+                        {{ .name }}
+                    </h4>
+                    <p class="text-bg-3">
+                        {{ .expertise }}
+                    </p>
+                    <div class="row my-4">
+                        <div class="col-12">
+                            <a href="{{ .linkedin }}" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="3em" viewBox="0 0 448 512"
+                                    class="fill-bg-3">
+                                    <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                    <path
+                                        d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1.25em" viewBox="0 0 448 512" class="fill-bg-3">
+                                <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                <path
+                                    d="M288 64c0 17.7-14.3 32-32 32H32C14.3 96 0 81.7 0 64S14.3 32 32 32H256c17.7 0 32 14.3 32 32zm0 256c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H256c17.7 0 32 14.3 32 32zM0 192c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 448c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="col-10">
+                            <div class="text-start text-bg-3 fs-3">
+                                {{ .bio }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1.25em" viewBox="0 0 512 512" class="fill-bg-3">
+                                <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                <path
+                                    d="M176 56V96H336V56c0-4.4-3.6-8-8-8H184c-4.4 0-8 3.6-8 8zM128 96V56c0-30.9 25.1-56 56-56H328c30.9 0 56 25.1 56 56V96v32V480H128V128 96zM64 96H96V480H64c-35.3 0-64-28.7-64-64V160c0-35.3 28.7-64 64-64zM448 480H416V96h32c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="col-10">
+                            <div class="text-start text-bg-3 fs-3">
+                                {{ .experience }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {{ end }}
+            <div class="col-sm-7 col-md-4 mb-12 mb-md-0" data-aos="fade-down" data-aos-delay="400">
+                <svg xmlns="http://www.w3.org/2000/svg" height="300" viewBox="0 0 512 512" class="fill-dark-1 mb-6">
+                    <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                        d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm169.8-90.7c7.9-22.3 29.1-37.3 52.8-37.3h58.3c34.9 0 63.1 28.3 63.1 63.1c0 22.6-12.1 43.5-31.7 54.8L280 264.4c-.2 13-10.9 23.6-24 23.6c-13.3 0-24-10.7-24-24V250.5c0-8.6 4.6-16.5 12.1-20.8l44.3-25.4c4.7-2.7 7.6-7.7 7.6-13.1c0-8.4-6.8-15.1-15.1-15.1H222.6c-3.4 0-6.4 2.1-7.5 5.3l-.4 1.2c-4.4 12.5-18.2 19-30.6 14.6s-19-18.2-14.6-30.6l.4-1.2zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z">
+                    </path>
+                </svg>
+                <h4 class="mb-2 text-light-1 font-heading fst-italic fw-light">
+                    {{ .Site.Params.team.missing.name }}
+                </h4>
+                <p class="text-bg-3">
+                    {{ .Site.Params.team.missing.expertise }}
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
