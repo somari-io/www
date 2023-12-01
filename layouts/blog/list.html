@@ -1,0 +1,26 @@
+{{ define "main" }}
+
+<section class="pb-10 pb-lg-20 bg-bg-1">
+    <div class="container">
+        <div class="row">
+            {{ range .Pages }}
+            <div class="mb-15 col-lg-4 col-md-6 col-sm-9 aos-init aos-animate" data-aos="fade-down" data-aos-delay="0">
+                <a href="#" class="mb-4 d-block ">
+                    <img src="i/blog-1-1.jpg" srcset="i/blog-1-1@2x.jpg 2x" alt="" class="img-fluid">
+                </a>
+                <p class="text-light-2">
+                    Branding
+                </p>
+                <a href="{{ .Permalink }}" class="font-heading fs-3 mb-2 text-light-1">
+                    {{ .Title }}
+                </a>
+                <p class="fs-3 mb-0 text-light-2">
+                    {{ .Summary }}
+                </p>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+
+{{ end }}

@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="generator" content="Hugo 0.92.2" />
+    <meta charset="utf-8">
+    <title>Somari - Security Management For NGOs</title>
+    <meta name="description"
+        content="Somari is the first software solution dedicated to managing the security of NGO staff on the field.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="i/icon-256.png">
+    
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@100;200;300;400;500;600;700;800;900&family=DM+Sans:wght@100;200;300;400;500;600;700;800;900&subset=latin&display=swap"
+        rel="stylesheet">
+    
+    
+
+    
+    
+        <link rel="stylesheet" href="/styles.min.ed628c229ed8d10ea040920095a57ae11ea260666b3af8bdbf14303092a87366.css" integrity="sha256-7WKMIp7Y0Q6gQJIAlaV64R6iYGZrOvi9vxQwMJKoc2Y=" crossorigin="anonymous">
+    
+
+    
+    
+    
+    <style>
+        html {
+            scroll-padding-top: 95px;
+        }
+    </style>
+    <meta name="author" content="The Somari Team">
+    
+    
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Security Management For NGOs">
+    <meta property="og:description"
+        content="Somari is the first web & mobile solution to dedicated to managing the security of NGO staff.">
+    <meta property="og:url" content="https://somari.io">
+    <meta property="og:image" content="https://somari.io/i/logo-somari-dark-text-social.png">
+    <meta name='twitter:card' content='summary_large_image'>
+    <meta name="twitter:title" content="Security Management For NGOs">
+    <meta name="twitter:description"
+        content="Somari is the first web & mobile solution to dedicated to managing the security of NGO staff.">
+    <meta property="twitter:domain" content="somari.io">
+    <meta property="twitter:url" content="https://somari.io">
+    <meta name="twitter:image" content="https://somari.io/i/logo-somari-dark-text-social.png">
+    
+</head>
+
+<body>
+    <nav class="py-4 py-lg-7 bg-bg-1 sticky-top">
+    <div class="d-block d-lg-none">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-3" data-aos="fade-down" data-aos-delay="0">
+                    <a class="btn btn-width-equal-height d-lg-none rounded-circle custom-mobile-nav-btn"
+                        data-bs-toggle="offcanvas" data-bs-target="#custom-id-pj3gwlaw">
+                        <svg width="20" height="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="fill-light-1">
+                            <path
+                                d="M2.00016 5.33333H14.0002C14.177 5.33333 14.3465 5.2631 14.4716 5.13807C14.5966 5.01305 14.6668 4.84348 14.6668 4.66667C14.6668 4.48986 14.5966 4.32029 14.4716 4.19526C14.3465 4.07024 14.177 4 14.0002 4H2.00016C1.82335 4 1.65378 4.07024 1.52876 4.19526C1.40373 4.32029 1.3335 4.48986 1.3335 4.66667C1.3335 4.84348 1.40373 5.01305 1.52876 5.13807C1.65378 5.2631 1.82335 5.33333 2.00016 5.33333ZM14.0002 10.6667H2.00016C1.82335 10.6667 1.65378 10.7369 1.52876 10.8619C1.40373 10.987 1.3335 11.1565 1.3335 11.3333C1.3335 11.5101 1.40373 11.6797 1.52876 11.8047C1.65378 11.9298 1.82335 12 2.00016 12H14.0002C14.177 12 14.3465 11.9298 14.4716 11.8047C14.5966 11.6797 14.6668 11.5101 14.6668 11.3333C14.6668 11.1565 14.5966 10.987 14.4716 10.8619C14.3465 10.7369 14.177 10.6667 14.0002 10.6667ZM14.0002 7.33333H2.00016C1.82335 7.33333 1.65378 7.40357 1.52876 7.5286C1.40373 7.65362 1.3335 7.82319 1.3335 8C1.3335 8.17681 1.40373 8.34638 1.52876 8.4714C1.65378 8.59643 1.82335 8.66667 2.00016 8.66667H14.0002C14.177 8.66667 14.3465 8.59643 14.4716 8.4714C14.5966 8.34638 14.6668 8.17681 14.6668 8C14.6668 7.82319 14.5966 7.65362 14.4716 7.5286C14.3465 7.40357 14.177 7.33333 14.0002 7.33333Z">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+                <div class="col-6 text-center" data-aos="fade-down" data-aos-delay="250">
+                    <a href="#">
+                        <img src="i/logo-somari-white-small.png" srcset="i/logo-somari-white-small.png 2x" alt=""
+                            class="img-fluid" data-aos="fade-down" data-aos-delay="0">
+                    </a>
+                </div>
+                <div class="col-3" data-aos="fade-down" data-aos-delay="500">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="offcanvas offcanvas-start custom-dark-offcanvas-bg" id="custom-id-pj3gwlaw" aria-hidden="true">
+        <div class="offcanvas-header">
+            <a href="#">
+                <img src="i/logo-somari-white-small.png" alt="" class="img-fluid"
+                    srcset="i/logo-somari-white-small.png 2x">
+            </a>
+            <a class="btn btn-sm btn-width-equal-height custom-mobile-nav-btn" data-bs-dismiss="offcanvas">
+                <svg width="24" height="24" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="fill-light-2">
+                    <path
+                        d="M8.9398 8L13.1398 3.80667C13.2653 3.68113 13.3359 3.51087 13.3359 3.33333C13.3359 3.1558 13.2653 2.98554 13.1398 2.86C13.0143 2.73447 12.844 2.66394 12.6665 2.66394C12.4889 2.66394 12.3187 2.73447 12.1931 2.86L7.9998 7.06L3.80646 2.86C3.68093 2.73447 3.51066 2.66394 3.33313 2.66394C3.1556 2.66394 2.98533 2.73447 2.8598 2.86C2.73426 2.98554 2.66374 3.1558 2.66374 3.33333C2.66374 3.51087 2.73426 3.68113 2.8598 3.80667L7.0598 8L2.8598 12.1933C2.79731 12.2553 2.74771 12.329 2.71387 12.4103C2.68002 12.4915 2.6626 12.5787 2.6626 12.6667C2.6626 12.7547 2.68002 12.8418 2.71387 12.9231C2.74771 13.0043 2.79731 13.078 2.8598 13.14C2.92177 13.2025 2.99551 13.2521 3.07675 13.2859C3.15798 13.3198 3.24512 13.3372 3.33313 13.3372C3.42114 13.3372 3.50827 13.3198 3.58951 13.2859C3.67075 13.2521 3.74449 13.2025 3.80646 13.14L7.9998 8.94L12.1931 13.14C12.2551 13.2025 12.3288 13.2521 12.4101 13.2859C12.4913 13.3198 12.5785 13.3372 12.6665 13.3372C12.7545 13.3372 12.8416 13.3198 12.9228 13.2859C13.0041 13.2521 13.0778 13.2025 13.1398 13.14C13.2023 13.078 13.2519 13.0043 13.2857 12.9231C13.3196 12.8418 13.337 12.7547 13.337 12.6667C13.337 12.5787 13.3196 12.4915 13.2857 12.4103C13.2519 12.329 13.2023 12.2553 13.1398 12.1933L8.9398 8Z">
+                    </path>
+                </svg>
+            </a>
+        </div>
+        <div class="offcanvas-body">
+            <div>
+                <a href="#" class="fw-bold py-2 d-inline-block text-light-1">
+                    Home
+                </a>
+            </div>
+            <div>
+                <a href="#focus_areas" class="fw-bold py-2 d-inline-block text-light-1">
+                    Focus Areas
+                </a>
+            </div>
+            <div>
+                <a href="#mobile" class="fw-bold py-2 d-inline-block text-light-1">
+                    Mobile
+                </a>
+            </div>
+            <div>
+                <a href="#features" class="fw-bold py-2 d-inline-block text-light-1">
+                    Features
+                </a>
+            </div>
+            <div>
+                <a href="#connect" class="fw-bold py-2 d-inline-block text-light-1">
+                    Connect
+                </a>
+            </div>
+            <div>
+                <a href="#team" class="fw-bold py-2 d-inline-block text-light-1">
+                    Team
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="d-none d-lg-block">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-2">
+                    <a href="#">
+                        <img src="i/logo-somari-white.png" srcset="i/logo-somari-white.png 2x" alt="" class="img-fluid"
+                            data-aos="fade-down" data-aos-delay="0">
+                    </a>
+                </div>
+                <div class="col-8 d-flex justify-content-end">
+                    <a href="#hero" class="fw-bold mx-4 text-light-1" data-aos="fade-down" data-aos-delay="150">
+                        Home
+                    </a>
+                    <a href="#focus_areas" class="fw-bold mx-4 text-light-1" data-aos="fade-down" data-aos-delay="250">
+                        Focus Areas
+                    </a>
+                    <a href="#mobile" class="fw-bold mx-4 text-light-1" data-aos="fade-down" data-aos-delay="250">
+                        Mobile
+                    </a>
+                    <a href="#features" class="fw-bold mx-4 text-light-1" data-aos="fade-down" data-aos-delay="400">
+                        Features
+                    </a>
+                    <a class="fw-bold mx-4 text-light-1" data-aos="fade-down" data-aos-delay="400" href="#connect">
+                        Connect
+                    </a>
+                    <a href="#team" class="fw-bold ms-4 text-light-1" data-aos="fade-down" data-aos-delay="500">
+                        Team
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+
+    <header class="text-center bg-repeat-none bg-position-center bg-bg-1" data-bg-src="i/somari-logo-dark.png" data-bg-src-2x="i/somari-logo-dark.png" id="hero">
+    <div class="container">
+        <div class="row align-items-xxl-center align-items-center vh-100">
+            <div class="col">
+                <h1 class="display-3 remove-br mb-6 text-light-1" data-aos="fade-down" data-aos-delay="0">
+                    We are building the first software solution dedicated to managing the security of NGO staff.
+                </h1>
+                <p class="fs-1 pe-2 pt-1 remove-br mb-md-8 mb-6 text-light-2" data-aos="fade-down" data-aos-delay="150">
+                    A web &amp; mobile solution built to streamline security management across field and HQ.
+                </p>
+                <a href="#connect" class="btn btn-action-1">
+                    Sounds Interesting!
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+    
+
+<section class="py-10 py-lg-20 bg-bg-1" id="focus_areas">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-lg-8 col-xl-7 col-xxl-6">
+                <h2 class="display-5 mb-6 text-light-1" data-aos="fade-down" data-aos-delay="0">
+                    We Focus On What Matters
+                </h2>
+                <p class="fs-2 mb-8 mb-md-15 text-light-2" data-aos="fade-down" data-aos-delay="250">
+                    Both the NGO sector and the Security Management field have specificities that we think deserve special attention.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="mb-10 col-12" data-aos="fade-down" data-aos-delay="250">
+                <div class="border-bottom opacity-30 border-bottom-light-1">
+                </div>
+            </div>
+            
+                <div class="mb-8 mb-md-0 col-md-3 col-sm-6" data-aos="fade-down" data-aos-delay="500">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="5em" viewBox="0 0 640 512" class="mb-4 fill-dark-1">
+                        <path
+                            d="M315.4 15.5C309.7 5.9 299.2 0 288 0s-21.7 5.9-27.4 15.5l-96 160c-5.9 9.9-6.1 22.2-.4 32.2s16.3 16.2 27.8 16.2H384c11.5 0 22.2-6.2 27.8-16.2s5.5-22.3-.4-32.2l-96-160zM288 312V456c0 22.1 17.9 40 40 40H472c22.1 0 40-17.9 40-40V312c0-22.1-17.9-40-40-40H328c-22.1 0-40 17.9-40 40zM128 512a128 128 0 1 0 0-256 128 128 0 1 0 0 256z">
+                        </path>
+                    </svg>
+                    <h5 class="mb-4 text-light-1">
+                        One-Stop Shop
+                    </h5>
+                    <p class="mb-0 text-light-2 fs-3">
+                        Security Management is done with many different tools. Somari avoids fragmentation by being the one-stop shop for all your employees, from security managers to staff on the field.
+                    </p>
+                </div>
+            
+                <div class="mb-8 mb-md-0 col-md-3 col-sm-6" data-aos="fade-down" data-aos-delay="750">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="5em" viewBox="0 0 640 512" class="mb-4 fill-dark-1">
+                        <path
+                            d="M48 48h88c13.3 0 24-10.7 24-24s-10.7-24-24-24H32C14.3 0 0 14.3 0 32V136c0 13.3 10.7 24 24 24s24-10.7 24-24V48zM175.8 224a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm-26.5 32C119.9 256 96 279.9 96 309.3c0 14.7 11.9 26.7 26.7 26.7h56.1c8-34.1 32.8-61.7 65.2-73.6c-7.5-4.1-16.2-6.4-25.3-6.4H149.3zm368 80c14.7 0 26.7-11.9 26.7-26.7c0-29.5-23.9-53.3-53.3-53.3H421.3c-9.2 0-17.8 2.3-25.3 6.4c32.4 11.9 57.2 39.5 65.2 73.6h56.1zm-89.4 0c-8.6-24.3-29.9-42.6-55.9-47c-3.9-.7-7.9-1-12-1H280c-4.1 0-8.1 .3-12 1c-26 4.4-47.3 22.7-55.9 47c-2.7 7.5-4.1 15.6-4.1 24c0 13.3 10.7 24 24 24H408c13.3 0 24-10.7 24-24c0-8.4-1.4-16.5-4.1-24zM464 224a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm-80-32a64 64 0 1 0 -128 0 64 64 0 1 0 128 0zM504 48h88v88c0 13.3 10.7 24 24 24s24-10.7 24-24V32c0-17.7-14.3-32-32-32H504c-13.3 0-24 10.7-24 24s10.7 24 24 24zM48 464V376c0-13.3-10.7-24-24-24s-24 10.7-24 24V480c0 17.7 14.3 32 32 32H136c13.3 0 24-10.7 24-24s-10.7-24-24-24H48zm456 0c-13.3 0-24 10.7-24 24s10.7 24 24 24H608c17.7 0 32-14.3 32-32V376c0-13.3-10.7-24-24-24s-24 10.7-24 24v88H504z">
+                        </path>
+                    </svg>
+                    <h5 class="mb-4 text-light-1">
+                        User Experience
+                    </h5>
+                    <p class="mb-0 text-light-2 fs-3">
+                        A modern user interface built specifically to address the wide variety of user profiles that compose the staff at HQ and field levels.
+                    </p>
+                </div>
+            
+                <div class="mb-8 mb-md-0 col-md-3 col-sm-6" data-aos="fade-down" data-aos-delay="1000">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="5em" viewBox="0 0 640 512" class="mb-4 fill-dark-1">
+                        <path
+                            d="M208 80c0-26.5 21.5-48 48-48h64c26.5 0 48 21.5 48 48v64c0 26.5-21.5 48-48 48h-8v40H464c30.9 0 56 25.1 56 56v32h8c26.5 0 48 21.5 48 48v64c0 26.5-21.5 48-48 48H464c-26.5 0-48-21.5-48-48V368c0-26.5 21.5-48 48-48h8V288c0-4.4-3.6-8-8-8H312v40h8c26.5 0 48 21.5 48 48v64c0 26.5-21.5 48-48 48H256c-26.5 0-48-21.5-48-48V368c0-26.5 21.5-48 48-48h8V280H112c-4.4 0-8 3.6-8 8v32h8c26.5 0 48 21.5 48 48v64c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V368c0-26.5 21.5-48 48-48h8V288c0-30.9 25.1-56 56-56H264V192h-8c-26.5 0-48-21.5-48-48V80z">
+                        </path>
+                    </svg>
+                    <h5 class="mb-4 text-light-1">
+                        Information Management
+                    </h5>
+                    <p class="mb-0 text-light-2 fs-3">
+                        A central location to access and from which to disseminate security related information across your entire organization.
+                    </p>
+                </div>
+            
+                <div class="mb-8 mb-md-0 col-md-3 col-sm-6" data-aos="fade-down" data-aos-delay="1250">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="5em" viewBox="0 0 640 512" class="mb-4 fill-dark-1">
+                        <path
+                            d="M0 416c0 17.7 14.3 32 32 32l54.7 0c12.3 28.3 40.5 48 73.3 48s61-19.7 73.3-48L480 448c17.7 0 32-14.3 32-32s-14.3-32-32-32l-246.7 0c-12.3-28.3-40.5-48-73.3-48s-61 19.7-73.3 48L32 384c-17.7 0-32 14.3-32 32zm128 0a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zM320 256a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm32-80c-32.8 0-61 19.7-73.3 48L32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l246.7 0c12.3 28.3 40.5 48 73.3 48s61-19.7 73.3-48l54.7 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-54.7 0c-12.3-28.3-40.5-48-73.3-48zM192 128a32 32 0 1 1 0-64 32 32 0 1 1 0 64zm73.3-64C253 35.7 224.8 16 192 16s-61 19.7-73.3 48L32 64C14.3 64 0 78.3 0 96s14.3 32 32 32l86.7 0c12.3 28.3 40.5 48 73.3 48s61-19.7 73.3-48L480 128c17.7 0 32-14.3 32-32s-14.3-32-32-32L265.3 64z">
+                        </path>
+                    </svg>
+                    <h5 class="mb-4 text-light-1">
+                        Customization
+                    </h5>
+                    <p class="mb-0 text-light-2 fs-3">
+                        Although Security Management has a lot of similarities, each organization has specifics that need to be taken into account.
+                    </p>
+                </div>
+            
+        </div>
+    </div>
+</section>
+    
+    <section class="py-10 py-lg-20 text-center bg-bg-1" id="mobile">
+    <div class="container">
+        <div class="row align-items-center justify-content-between">
+            <div class="col-md-6 col-lg-5">
+                <img src="i/somari-app-icon-90.png" srcset="i/somari-app-icon-180.png 2x" alt="" class="img-fluid mb-6 rounded-2" data-aos="fade-down" data-aos-delay="150">
+                <h2 class="display-5 mb-6 text-light-1" data-aos="fade-down" data-aos-delay="250">
+                    Your new mobile Constant Companion
+                </h2>
+                <p class="fs-1 mb-8 text-light-2" data-aos="fade-down" data-aos-delay="400">
+                    A mobile application that seamlessly puts critical security information in the hands of all your employees, even when offline.
+                </p>
+            </div>
+            <div class="col-md-5 col-lg-6 mt-12 mt-md-0">
+                <div class="py-10" data-aos="fade-down" data-aos-delay="0">
+                    <img src="i/somari-mobile-onboarding.png" alt="" class="img-fluid w-50" srcset="i/somari-mobile-onboarding.png 2x">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="py-10 py-lg-20 text-center text-md-start bg-bg-1" id="features">
+    <div class="container">
+        <div class="row flex-column">
+            <div class="col-md-10 col-lg-8 col-xl-7 col-xxl-6">
+                <h2 class="display-5 mb-6 text-light-1" data-aos="fade-down" data-aos-delay="0">
+                    All The Tools You Need For Security Management
+                </h2>
+                <p class="fs-2 mb-8 mb-md-15 text-light-2" data-aos="fade-down" data-aos-delay="250">
+                    All the tools work with one another to provide users a coherent and integrated experience.
+                </p>
+            </div>
+        </div>
+        <div class="row justify-content-center justify-content-sm-start">
+            
+                <div class="mb-15 col-10 col-sm-6 col-md-5 col-lg-4" data-aos="fade-down" data-aos-delay="250">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="2.5em" viewBox="0 0 640 512" class="fill-action-1 mb-6">
+                        
+                        <path
+                            d="M0 64C0 28.7 28.7 0 64 0H224V128c0 17.7 14.3 32 32 32H384v47l-92.8 37.1c-21.3 8.5-35.2 29.1-35.2 52c0 56.6 18.9 148 94.2 208.3c-9 4.8-19.3 7.6-30.2 7.6H64c-35.3 0-64-28.7-64-64V64zm384 64H256V0L384 128zm39.1 97.7c5.7-2.3 12.1-2.3 17.8 0l120 48C570 277.4 576 286.2 576 296c0 63.3-25.9 168.8-134.8 214.2c-5.9 2.5-12.6 2.5-18.5 0C313.9 464.8 288 359.3 288 296c0-9.8 6-18.6 15.1-22.3l120-48zM527.4 312L432 273.8V461.7c68.2-33 91.5-99 95.4-149.7z">
+                        </path>
+                    </svg>
+                    <h5 class="mb-4 text-light-1">
+                        Security Plan
+                    </h5>
+                </div>
+            
+                <div class="mb-15 col-10 col-sm-6 col-md-5 col-lg-4" data-aos="fade-down" data-aos-delay="250">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="2.5em" viewBox="0 0 640 512" class="fill-action-1 mb-6">
+                        
+                        <path
+                            d="M192 0c-41.8 0-77.4 26.7-90.5 64H64C28.7 64 0 92.7 0 128V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V128c0-35.3-28.7-64-64-64H282.5C269.4 26.7 233.8 0 192 0zm0 64a32 32 0 1 1 0 64 32 32 0 1 1 0-64zM72 272a24 24 0 1 1 48 0 24 24 0 1 1 -48 0zm104-16H304c8.8 0 16 7.2 16 16s-7.2 16-16 16H176c-8.8 0-16-7.2-16-16s7.2-16 16-16zM72 368a24 24 0 1 1 48 0 24 24 0 1 1 -48 0zm88 0c0-8.8 7.2-16 16-16H304c8.8 0 16 7.2 16 16s-7.2 16-16 16H176c-8.8 0-16-7.2-16-16z">
+                        </path>
+                    </svg>
+                    <h5 class="mb-4 text-light-1">
+                        Risk Analysis
+                    </h5>
+                </div>
+            
+                <div class="mb-15 col-10 col-sm-6 col-md-5 col-lg-4" data-aos="fade-down" data-aos-delay="250">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="2.5em" viewBox="0 0 640 512" class="fill-action-1 mb-6">
+                        
+                        <path
+                            d="M341.5 13.5C337.5 5.2 329.1 0 319.9 0s-17.6 5.2-21.6 13.5L229.7 154.8 76.5 177.5c-9 1.3-16.5 7.6-19.3 16.3s-.5 18.1 5.9 24.5L174.2 328.4 148 483.9c-1.5 9 2.2 18.1 9.7 23.5s17.3 6 25.3 1.7l137-73.2 137 73.2c8.1 4.3 17.9 3.7 25.3-1.7s11.2-14.5 9.7-23.5L465.6 328.4 576.8 218.2c6.5-6.4 8.7-15.9 5.9-24.5s-10.3-14.9-19.3-16.3L410.1 154.8 341.5 13.5zM320 384.7V79.1l52.5 108.1c3.5 7.1 10.2 12.1 18.1 13.3l118.3 17.5L423 303c-5.5 5.5-8.1 13.3-6.8 21l20.2 119.6L331.2 387.5c-3.5-1.9-7.4-2.8-11.2-2.8z">
+                        </path>
+                    </svg>
+                    <h5 class="mb-4 text-light-1">
+                        Security Score
+                    </h5>
+                </div>
+            
+                <div class="mb-15 col-10 col-sm-6 col-md-5 col-lg-4" data-aos="fade-down" data-aos-delay="400">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="2.5em" viewBox="0 0 640 512" class="fill-action-1 mb-6">
+                        
+                        <path
+                            d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z">
+                        </path>
+                    </svg>
+                    <h5 class="mb-4 text-light-1">
+                        Context Analysis
+                    </h5>
+                </div>
+            
+                <div class="mb-15 col-10 col-sm-6 col-md-5 col-lg-4" data-aos="fade-down" data-aos-delay="400">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="2.5em" viewBox="0 0 640 512" class="fill-action-1 mb-6">
+                        
+                        <path
+                            d="M512 80c8.8 0 16 7.2 16 16V416c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V96c0-8.8 7.2-16 16-16H512zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM208 256a64 64 0 1 0 0-128 64 64 0 1 0 0 128zm-32 32c-44.2 0-80 35.8-80 80c0 8.8 7.2 16 16 16H304c8.8 0 16-7.2 16-16c0-44.2-35.8-80-80-80H176zM376 144c-13.3 0-24 10.7-24 24s10.7 24 24 24h80c13.3 0 24-10.7 24-24s-10.7-24-24-24H376zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24h80c13.3 0 24-10.7 24-24s-10.7-24-24-24H376z">
+                        </path>
+                    </svg>
+                    <h5 class="mb-4 text-light-1">
+                        Contact Management
+                    </h5>
+                </div>
+            
+                <div class="mb-15 col-10 col-sm-6 col-md-5 col-lg-4" data-aos="fade-down" data-aos-delay="400">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="2.5em" viewBox="0 0 640 512" class="fill-action-1 mb-6">
+                        
+                        <path
+                            d="M152.1 38.2c9.9 8.9 10.7 24 1.8 33.9l-72 80c-4.4 4.9-10.6 7.8-17.2 7.9s-12.9-2.4-17.6-7L7 113C-2.3 103.6-2.3 88.4 7 79s24.6-9.4 33.9 0l22.1 22.1 55.1-61.2c8.9-9.9 24-10.7 33.9-1.8zm0 160c9.9 8.9 10.7 24 1.8 33.9l-72 80c-4.4 4.9-10.6 7.8-17.2 7.9s-12.9-2.4-17.6-7L7 273c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l22.1 22.1 55.1-61.2c8.9-9.9 24-10.7 33.9-1.8zM224 96c0-17.7 14.3-32 32-32H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H256c-17.7 0-32-14.3-32-32zm0 160c0-17.7 14.3-32 32-32H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H256c-17.7 0-32-14.3-32-32zM160 416c0-17.7 14.3-32 32-32H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H192c-17.7 0-32-14.3-32-32zM48 368a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+                        </path>
+                    </svg>
+                    <h5 class="mb-4 text-light-1">
+                        Action Plan
+                    </h5>
+                </div>
+            
+                <div class="mb-15 col-10 col-sm-6 col-md-5 col-lg-4" data-aos="fade-down" data-aos-delay="550">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="2.5em" viewBox="0 0 640 512" class="fill-action-1 mb-6">
+                        
+                        <path
+                            d="M208 96a48 48 0 1 0 0-96 48 48 0 1 0 0 96zM123.7 200.5c1-.4 1.9-.8 2.9-1.2l-16.9 63.5c-5.6 21.1-.1 43.6 14.7 59.7l70.7 77.1 22 88.1c4.3 17.1 21.7 27.6 38.8 23.3s27.6-21.7 23.3-38.8l-23-92.1c-1.9-7.8-5.8-14.9-11.2-20.8l-49.5-54 19.3-65.5 9.6 23c4.4 10.6 12.5 19.3 22.8 24.5l26.7 13.3c15.8 7.9 35 1.5 42.9-14.3s1.5-35-14.3-42.9L281 232.7l-15.3-36.8C248.5 154.8 208.3 128 163.7 128c-22.8 0-45.3 4.8-66.1 14l-8 3.5c-32.9 14.6-58.1 42.4-69.4 76.5l-2.6 7.8c-5.6 16.8 3.5 34.9 20.2 40.5s34.9-3.5 40.5-20.2l2.6-7.8c5.7-17.1 18.3-30.9 34.7-38.2l8-3.5zm-30 135.1L68.7 398 9.4 457.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L116.3 441c4.6-4.6 8.2-10.1 10.6-16.1l14.5-36.2-40.7-44.4c-2.5-2.7-4.8-5.6-7-8.6zM550.6 153.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L530.7 224H384c-17.7 0-32 14.3-32 32s14.3 32 32 32H530.7l-25.4 25.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l80-80c12.5-12.5 12.5-32.8 0-45.3l-80-80z">
+                        </path>
+                    </svg>
+                    <h5 class="mb-4 text-light-1">
+                        Evacuation Plan
+                    </h5>
+                </div>
+            
+                <div class="mb-15 col-10 col-sm-6 col-md-5 col-lg-4" data-aos="fade-down" data-aos-delay="550">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="2.5em" viewBox="0 0 640 512" class="fill-action-1 mb-6">
+                        
+                        <path
+                            d="M384 480c0 11.7 3.1 22.6 8.6 32H392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L490.7 166.3C447.2 181.7 416 223.2 416 272v24.6c-19.1 11.1-32 31.7-32 55.4V480zM528 240c-17.7 0-32 14.3-32 32v48h64V272c0-17.7-14.3-32-32-32zm-80 32c0-44.2 35.8-80 80-80s80 35.8 80 80v48c17.7 0 32 14.3 32 32V480c0 17.7-14.3 32-32 32H448c-17.7 0-32-14.3-32-32V352c0-17.7 14.3-32 32-32V272z">
+                        </path>
+                    </svg>
+                    <h5 class="mb-4 text-light-1">
+                        Hibernation Plan
+                    </h5>
+                </div>
+            
+                <div class="mb-15 col-10 col-sm-6 col-md-5 col-lg-4" data-aos="fade-down" data-aos-delay="550">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="2.5em" viewBox="0 0 640 512" class="fill-action-1 mb-6">
+                        
+                        <path
+                            d="M184 48H328c4.4 0 8 3.6 8 8V96H176V56c0-4.4 3.6-8 8-8zm-56 8V96v32V480H384V128 96 56c0-30.9-25.1-56-56-56H184c-30.9 0-56 25.1-56 56zM96 96H64C28.7 96 0 124.7 0 160V416c0 35.3 28.7 64 64 64H96V96zM416 480h32c35.3 0 64-28.7 64-64V160c0-35.3-28.7-64-64-64H416V480zM224 208c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v48h48c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H288v48c0 8.8-7.2 16-16 16H240c-8.8 0-16-7.2-16-16V320H176c-8.8 0-16-7.2-16-16V272c0-8.8 7.2-16 16-16h48V208z">
+                        </path>
+                    </svg>
+                    <h5 class="mb-4 text-light-1">
+                        Medical Evacuation Plan
+                    </h5>
+                </div>
+            
+                <div class="mb-15 col-10 col-sm-6 col-md-5 col-lg-4" data-aos="fade-down" data-aos-delay="700">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="2.5em" viewBox="0 0 640 512" class="fill-action-1 mb-6">
+                        
+                        <path
+                            d="M499.6 11.3c6.7-10.7 20.5-14.5 31.7-8.5s15.8 19.5 10.6 31L404.8 338.6c2.2 2.3 4.3 4.7 6.3 7.1l97.2-54.7c10.5-5.9 23.6-3.1 30.9 6.4s6.3 23-2.2 31.5l-87 87H378.5c-13.2-37.3-48.7-64-90.5-64s-77.4 26.7-90.5 64H117.8L42.3 363.7c-9.7-6.7-13.1-19.6-7.9-30.3s17.4-15.9 28.7-12.4l97.2 30.4c3-3.9 6.1-7.7 9.4-11.3L107.4 236.3c-6.1-10.1-3.9-23.1 5.1-30.7s22.2-7.5 31.1 .1L246 293.6c1.5-.4 3-.8 4.5-1.1l13.6-142.7c1.2-12.3 11.5-21.7 23.9-21.7s22.7 9.4 23.9 21.7l13.5 141.9L499.6 11.3zM64 448v0H512v0h32c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H64zM288 0c13.3 0 24 10.7 24 24V72c0 13.3-10.7 24-24 24s-24-10.7-24-24V24c0-13.3 10.7-24 24-24z">
+                        </path>
+                    </svg>
+                    <h5 class="mb-4 text-light-1">
+                        Incident Reporting
+                    </h5>
+                </div>
+            
+                <div class="mb-15 col-10 col-sm-6 col-md-5 col-lg-4" data-aos="fade-down" data-aos-delay="700">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="2.5em" viewBox="0 0 640 512" class="fill-action-1 mb-6">
+                        
+                        <path
+                            d="M335.5 4l288 160c15.4 8.6 21 28.1 12.4 43.5s-28.1 21-43.5 12.4L320 68.6 47.5 220c-15.4 8.6-34.9 3-43.5-12.4s-3-34.9 12.4-43.5L304.5 4c9.7-5.4 21.4-5.4 31.1 0zM320 160a40 40 0 1 1 0 80 40 40 0 1 1 0-80zM144 256a40 40 0 1 1 0 80 40 40 0 1 1 0-80zm312 40a40 40 0 1 1 80 0 40 40 0 1 1 -80 0zM226.9 491.4L200 441.5V480c0 17.7-14.3 32-32 32H120c-17.7 0-32-14.3-32-32V441.5L61.1 491.4c-6.3 11.7-20.8 16-32.5 9.8s-16-20.8-9.8-32.5l37.9-70.3c15.3-28.5 45.1-46.3 77.5-46.3h19.5c16.3 0 31.9 4.5 45.4 12.6l33.6-62.3c15.3-28.5 45.1-46.3 77.5-46.3h19.5c32.4 0 62.1 17.8 77.5 46.3l33.6 62.3c13.5-8.1 29.1-12.6 45.4-12.6h19.5c32.4 0 62.1 17.8 77.5 46.3l37.9 70.3c6.3 11.7 1.9 26.2-9.8 32.5s-26.2 1.9-32.5-9.8L552 441.5V480c0 17.7-14.3 32-32 32H472c-17.7 0-32-14.3-32-32V441.5l-26.9 49.9c-6.3 11.7-20.8 16-32.5 9.8s-16-20.8-9.8-32.5l36.3-67.5c-1.7-1.7-3.2-3.6-4.3-5.8L376 345.5V400c0 17.7-14.3 32-32 32H296c-17.7 0-32-14.3-32-32V345.5l-26.9 49.9c-1.2 2.2-2.6 4.1-4.3 5.8l36.3 67.5c6.3 11.7 1.9 26.2-9.8 32.5s-26.2 1.9-32.5-9.8z">
+                        </path>
+                    </svg>
+                    <h5 class="mb-4 text-light-1">
+                        Safegauarding Policy
+                    </h5>
+                </div>
+            
+                <div class="mb-15 col-10 col-sm-6 col-md-5 col-lg-4" data-aos="fade-down" data-aos-delay="700">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="2.5em" viewBox="0 0 640 512" class="fill-action-1 mb-6">
+                        
+                        <path
+                            d="M0 80C0 53.5 21.5 32 48 32h96c26.5 0 48 21.5 48 48V96H384V80c0-26.5 21.5-48 48-48h96c26.5 0 48 21.5 48 48v96c0 26.5-21.5 48-48 48H432c-26.5 0-48-21.5-48-48V160H192v16c0 1.7-.1 3.4-.3 5L272 288h96c26.5 0 48 21.5 48 48v96c0 26.5-21.5 48-48 48H272c-26.5 0-48-21.5-48-48V336c0-1.7 .1-3.4 .3-5L144 224H48c-26.5 0-48-21.5-48-48V80z">
+                        </path>
+                    </svg>
+                    <h5 class="mb-4 text-light-1">
+                        SOP Library
+                    </h5>
+                </div>
+            
+                <div class="mb-15 col-10 col-sm-6 col-md-5 col-lg-4" data-aos="fade-down" data-aos-delay="850">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="2.5em" viewBox="0 0 640 512" class="fill-action-1 mb-6">
+                        
+                        <path
+                            d="M408 120c0 54.6-73.1 151.9-105.2 192c-7.7 9.6-22 9.6-29.6 0C241.1 271.9 168 174.6 168 120C168 53.7 221.7 0 288 0s120 53.7 120 120zm8 80.4c3.5-6.9 6.7-13.8 9.6-20.6c.5-1.2 1-2.5 1.5-3.7l116-46.4C558.9 123.4 576 135 576 152V422.8c0 9.8-6 18.6-15.1 22.3L416 503V200.4zM137.6 138.3c2.4 14.1 7.2 28.3 12.8 41.5c2.9 6.8 6.1 13.7 9.6 20.6V451.8L32.9 502.7C17.1 509 0 497.4 0 480.4V209.6c0-9.8 6-18.6 15.1-22.3l122.6-49zM327.8 332c13.9-17.4 35.7-45.7 56.2-77V504.3L192 449.4V255c20.5 31.3 42.3 59.6 56.2 77c20.5 25.6 59.1 25.6 79.6 0zM288 152a40 40 0 1 0 0-80 40 40 0 1 0 0 80z">
+                        </path>
+                    </svg>
+                    <h5 class="mb-4 text-light-1">
+                        Maps
+                    </h5>
+                </div>
+            
+                <div class="mb-15 col-10 col-sm-6 col-md-5 col-lg-4" data-aos="fade-down" data-aos-delay="850">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="2.5em" viewBox="0 0 640 512" class="fill-action-1 mb-6">
+                        
+                        <path
+                            d="M96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3zM625 177L497 305c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L591 143c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z">
+                        </path>
+                    </svg>
+                    <h5 class="mb-4 text-light-1">
+                        User Management
+                    </h5>
+                </div>
+            
+                <div class="mb-15 col-10 col-sm-6 col-md-5 col-lg-4" data-aos="fade-down" data-aos-delay="850">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="2.5em" viewBox="0 0 640 512" class="fill-action-1 mb-6">
+                        
+                        <path
+                            d="M0 64C0 28.7 28.7 0 64 0H224V128c0 17.7 14.3 32 32 32H384v38.6C310.1 219.5 256 287.4 256 368c0 59.1 29.1 111.3 73.7 143.3c-3.2 .5-6.4 .7-9.7 .7H64c-35.3 0-64-28.7-64-64V64zm384 64H256V0L384 128zM288 368a144 144 0 1 1 288 0 144 144 0 1 1 -288 0zm211.3-43.3c-6.2-6.2-16.4-6.2-22.6 0L416 385.4l-28.7-28.7c-6.2-6.2-16.4-6.2-22.6 0s-6.2 16.4 0 22.6l40 40c6.2 6.2 16.4 6.2 22.6 0l72-72c6.2-6.2 6.2-16.4 0-22.6z">
+                        </path>
+                    </svg>
+                    <h5 class="mb-4 text-light-1">
+                        Content Validation
+                    </h5>
+                </div>
+            
+                <div class="mb-15 col-10 col-sm-6 col-md-5 col-lg-4" data-aos="fade-down" data-aos-delay="1000">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="2.5em" viewBox="0 0 640 512" class="fill-action-1 mb-6">
+                        
+                        <path
+                            d="M213.2 32H288V96c0 17.7 14.3 32 32 32s32-14.3 32-32V32h74.8c27.1 0 51.3 17.1 60.3 42.6l42.7 120.6c-10.9-2.1-22.2-3.2-33.8-3.2c-59.5 0-112.1 29.6-144 74.8V224c0-17.7-14.3-32-32-32s-32 14.3-32 32v64c0 17.7 14.3 32 32 32c2.3 0 4.6-.3 6.8-.7c-4.5 15.5-6.8 31.8-6.8 48.7c0 5.4 .2 10.7 .7 16l-.7 0c-17.7 0-32 14.3-32 32v64H86.6C56.5 480 32 455.5 32 425.4c0-6.2 1.1-12.4 3.1-18.2L152.9 74.6C162 49.1 186.1 32 213.2 32zM352 368a144 144 0 1 1 288 0 144 144 0 1 1 -288 0zm211.3-43.3c-6.2-6.2-16.4-6.2-22.6 0L480 385.4l-28.7-28.7c-6.2-6.2-16.4-6.2-22.6 0s-6.2 16.4 0 22.6l40 40c6.2 6.2 16.4 6.2 22.6 0l72-72c6.2-6.2 6.2-16.4 0-22.6z">
+                        </path>
+                    </svg>
+                    <h5 class="mb-4 text-light-1">
+                        Movement Tracking
+                    </h5>
+                </div>
+            
+                <div class="mb-15 col-10 col-sm-6 col-md-5 col-lg-4" data-aos="fade-down" data-aos-delay="1000">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="2.5em" viewBox="0 0 640 512" class="fill-action-1 mb-6">
+                        
+                        <path
+                            d="M0 96l576 0c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96zm0 32V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V128H0zM64 405.3c0-29.5 23.9-53.3 53.3-53.3H234.7c29.5 0 53.3 23.9 53.3 53.3c0 5.9-4.8 10.7-10.7 10.7H74.7c-5.9 0-10.7-4.8-10.7-10.7zM176 192a64 64 0 1 1 0 128 64 64 0 1 1 0-128zm176 16c0-8.8 7.2-16 16-16H496c8.8 0 16 7.2 16 16s-7.2 16-16 16H368c-8.8 0-16-7.2-16-16zm0 64c0-8.8 7.2-16 16-16H496c8.8 0 16 7.2 16 16s-7.2 16-16 16H368c-8.8 0-16-7.2-16-16zm0 64c0-8.8 7.2-16 16-16H496c8.8 0 16 7.2 16 16s-7.2 16-16 16H368c-8.8 0-16-7.2-16-16z">
+                        </path>
+                    </svg>
+                    <h5 class="mb-4 text-light-1">
+                        Constant Companion
+                    </h5>
+                </div>
+            
+                <div class="mb-15 col-10 col-sm-6 col-md-5 col-lg-4" data-aos="fade-down" data-aos-delay="1000">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="2.5em" viewBox="0 0 640 512" class="fill-action-1 mb-6">
+                        
+                        <path
+                            d="M16 64C16 28.7 44.7 0 80 0H304c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H80c-35.3 0-64-28.7-64-64V64zM144 448c0 8.8 7.2 16 16 16h64c8.8 0 16-7.2 16-16s-7.2-16-16-16H160c-8.8 0-16 7.2-16 16zM304 64H80V384H304V64z">
+                        </path>
+                    </svg>
+                    <h5 class="mb-4 text-light-1">
+                        Mobile Application
+                    </h5>
+                </div>
+            
+        </div>
+    </div>
+</section>
+
+    <section class="py-10 py-lg-20 text-center bg-bg-1" id="connect">
+    <div class="container">
+        <div class="row justify-content-center text-md-center">
+            <div class="col-lg-12 col-12">
+                <h2 class="display-5 mb-6 text-light-1" data-aos="fade-down" data-aos-delay="0">
+                    We are continuously reaching out to leading NGOs to better understand their practices, pain points and digital needs.
+                </h2>
+            </div>
+            <div class="col-md-9 mb-10 col-xxl-6 col-xl-7 col-lg-8">
+                <p class="fs-2 mb-0 text-light-2" data-aos="fade-down" data-aos-delay="150">
+                   We&#39;d be thrilled to have the opportunity to chat with you. Let&#39;s connect and we will get back to you shortly.
+                </p>
+            </div>
+        </div>
+        <form static-form enctype="multipart/form-data" class=" mb-10" data-bitwarden-watching="1" static-form=""
+            static-form-id="contacts">
+            
+            <div class="alert alert-action-8 fixed-top invisible fade js-form-result" data-result="success"
+                role="alert">
+                <span class="js-form-alert-text" data-default-text="Thanks for your message!">
+                    Thanks. We will get back to you shortly!
+                </span>
+            </div>
+            <div class="alert alert-action-5 fixed-top invisible fade js-form-result" data-result="error" role="alert">
+                <span class="js-form-alert-text">
+                    Opps! Something went wrong. Contact contact@somari.io directly.
+                </span>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-sm-10 col-md-7 col-lg-3 mb-4 mb-lg-0" data-aos="fade-down" data-aos-delay="250">
+                    <div class="input-group">
+                        <div class="input-group-text border-end-0 ps-4 pe-2 border-light-3 text-light-1">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" class="fill-light-3">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16.75 17.5C16.75 17.5 18 17.5 18 16.25C18 15 16.75 11.25 10.5 11.25C4.25 11.25 3 15 3 16.25C3 17.5 4.25 17.5 4.25 17.5H16.75ZM4.25625 16.32V16.3175V16.32ZM4.2775 16.25H16.7225C16.7284 16.2493 16.7342 16.2485 16.74 16.2475L16.75 16.245C16.7487 15.9375 16.5575 15.0125 15.71 14.165C14.895 13.35 13.3613 12.5 10.5 12.5C7.6375 12.5 6.105 13.35 5.29 14.165C4.4425 15.0125 4.2525 15.9375 4.25 16.245C4.25915 16.2468 4.26832 16.2484 4.2775 16.25V16.25ZM16.745 16.32V16.3175V16.32ZM10.5 8.75C11.163 8.75 11.7989 8.48661 12.2678 8.01777C12.7366 7.54893 13 6.91304 13 6.25C13 5.58696 12.7366 4.95107 12.2678 4.48223C11.7989 4.01339 11.163 3.75 10.5 3.75C9.83696 3.75 9.20107 4.01339 8.73223 4.48223C8.26339 4.95107 8 5.58696 8 6.25C8 6.91304 8.26339 7.54893 8.73223 8.01777C9.20107 8.48661 9.83696 8.75 10.5 8.75V8.75ZM14.25 6.25C14.25 7.24456 13.8549 8.19839 13.1517 8.90165C12.4484 9.60491 11.4946 10 10.5 10C9.50544 10 8.55161 9.60491 7.84835 8.90165C7.14509 8.19839 6.75 7.24456 6.75 6.25C6.75 5.25544 7.14509 4.30161 7.84835 3.59835C8.55161 2.89509 9.50544 2.5 10.5 2.5C11.4946 2.5 12.4484 2.89509 13.1517 3.59835C13.8549 4.30161 14.25 5.25544 14.25 6.25V6.25Z">
+                                </path>
+                            </svg>
+                        </div>
+                        <input type="text" name="name" placeholder="Name"
+                            class="form-control border-start-0 ps-1 border-light-3 text-light-1" required="required">
+                    </div>
+                </div>
+                <div class="col-sm-10 col-md-7 col-lg-3 mb-4 mb-lg-0" data-aos="fade-down" data-aos-delay="500">
+                    <div class="input-group">
+                        <div class="input-group-text border-end-0 ps-4 pe-2 border-light-3 text-light-1">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" class="fill-light-3">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M17.5002 3.75H2.5002C2.16868 3.75 1.85074 3.8817 1.61632 4.11612C1.3819 4.35054 1.2502 4.66848 1.2502 5V5.27104L10.0002 10.5213L18.7502 5.27098V5C18.7502 4.66848 18.6185 4.35054 18.3841 4.11612C18.1497 3.8817 17.8317 3.75 17.5002 3.75ZM0.000203451 5.64224C-6.77314e-05 5.63161 -6.79025e-05 5.62098 0.000203451 5.61034V5C0.000203451 4.33696 0.263596 3.70107 0.732437 3.23223C1.20128 2.76339 1.83716 2.5 2.5002 2.5H17.5002C18.1632 2.5 18.7991 2.76339 19.268 3.23223C19.7368 3.70107 20.0002 4.33696 20.0002 5V5.61604V5.63397V15C20.0002 15.663 19.7368 16.2989 19.268 16.7678C18.7991 17.2366 18.1632 17.5 17.5002 17.5H2.5002C1.83716 17.5 1.20128 17.2366 0.732437 16.7678C0.263596 16.2989 0.000203451 15.663 0.000203451 15V5.64224ZM18.7502 13.9117V6.72895L12.6801 10.3708L18.7502 13.9117ZM18.7051 15.3329L11.5602 11.165L11.4569 11.1048L10.0002 11.9788L8.54329 11.1049L8.44016 11.165L1.29533 15.3328C1.35239 15.5394 1.46213 15.7297 1.61632 15.8839C1.85074 16.1183 2.16868 16.25 2.5002 16.25H17.5002C17.8317 16.25 18.1497 16.1183 18.3841 15.8839C18.5383 15.7297 18.648 15.5394 18.7051 15.3329ZM1.2502 13.9117V6.73013L7.31989 10.371L1.2502 13.9117Z">
+                                </path>
+                            </svg>
+                        </div>
+                        <input type="text" name="email" placeholder="Email"
+                            class="form-control border-start-0 ps-1 border-light-3 text-light-1" required="required">
+                    </div>
+                </div>
+                <div class="col-sm-10 col-md-7 col-lg-3 mb-4 mb-lg-0" data-aos="fade-down" data-aos-delay="500">
+                    <div class="input-group">
+                        <div class="input-group-text border-end-0 ps-4 pe-2 border-light-3 text-light-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 320 512"
+                                class="fill-light-3" width="20">
+                                
+                                <path
+                                    d="M80 160c0-35.3 28.7-64 64-64h32c35.3 0 64 28.7 64 64v3.6c0 21.8-11.1 42.1-29.4 53.8l-42.2 27.1c-25.2 16.2-40.4 44.1-40.4 74V320c0 17.7 14.3 32 32 32s32-14.3 32-32v-1.4c0-8.2 4.2-15.8 11-20.2l42.2-27.1c36.6-23.6 58.8-64.1 58.8-107.7V160c0-70.7-57.3-128-128-128H144C73.3 32 16 89.3 16 160c0 17.7 14.3 32 32 32s32-14.3 32-32zm80 320a40 40 0 1 0 0-80 40 40 0 1 0 0 80z">
+                                </path>
+                            </svg>
+                        </div>
+                        <select name="reason" class="form-select border-light-3 text-light-1 border-start-0"
+                            required="required">
+                            
+                                <option>
+                                    I want to know more
+                                </option>
+                            
+                                <option>
+                                    Interested for my organization
+                                </option>
+                            
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-10 col-md-7 col-lg-3" data-aos="fade-down" data-aos-delay="650">
+                    <button class="btn btn-action-1 w-100" data-bitwarden-clicked="1">
+                        Let&#39;s Connect!
+                    </button>
+                </div>
+            </div>
+        </form>
+        <p class="mb-0 text-light-2" data-aos="fade-down" data-aos-delay="750">
+            We will never share your email with anyone, ever.
+        </p>
+    </div>
+</section>
+
+    <section class="py-10 py-lg-20 text-center bg-bg-1" id="team">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 col-xl-8">
+                <h2 class="display-5 mb-6 text-light-1" data-aos="fade-down" data-aos-delay="0">
+                    The Executive Team
+                </h2>
+            </div>
+            <div class="col-md-9 col-lg-7 col-xl-6 col-xxl-5 mb-10">
+                <p class="fs-2 mb-0 text-light-2" data-aos="fade-down" data-aos-delay="150">
+                    We're building a team that combines senior sector and technical expertise.
+                </p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            
+                <div class="col-sm-7 col-md-4 mb-12 mb-md-0" data-aos="fade-down" data-aos-delay="400">
+                    <img src="i/gui-300.png" alt="" class="rounded-circle mb-6 img-fluid" srcset="i/gui.png 2x">
+                    <h4 class="mb-2 text-light-1">
+                        Guillaume Deflaux
+                    </h4>
+                    <p class="text-bg-3">
+                        ICT4D Expertise
+                    </p>
+                    <div class="row my-4">
+                        <div class="col-12">
+                            <a href="https://www.linkedin.com/in/guillaumedeflaux/" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="3em" viewBox="0 0 448 512"
+                                    class="fill-bg-3">
+                                    
+                                    <path
+                                        d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1.25em" viewBox="0 0 448 512" class="fill-bg-3">
+                                
+                                <path
+                                    d="M288 64c0 17.7-14.3 32-32 32H32C14.3 96 0 81.7 0 64S14.3 32 32 32H256c17.7 0 32 14.3 32 32zm0 256c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H256c17.7 0 32 14.3 32 32zM0 192c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 448c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="col-10">
+                            <div class="text-start text-bg-3 fs-3">
+                                17 years of experience in developing and deploying software at scale for NGOs and governments in humanitarian and development contexts.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1.25em" viewBox="0 0 512 512" class="fill-bg-3">
+                                
+                                <path
+                                    d="M176 56V96H336V56c0-4.4-3.6-8-8-8H184c-4.4 0-8 3.6-8 8zM128 96V56c0-30.9 25.1-56 56-56H328c30.9 0 56 25.1 56 56V96v32V480H128V128 96zM64 96H96V480H64c-35.3 0-64-28.7-64-64V160c0-35.3 28.7-64 64-64zM448 480H416V96h32c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="col-10">
+                            <div class="text-start text-bg-3 fs-3">
+                                Terre des hommes, ALIMA, Dimagi, IT4LIFE, Akvo
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="col-sm-7 col-md-4 mb-12 mb-md-0" data-aos="fade-down" data-aos-delay="400">
+                    <img src="i/louis-300.jpeg" alt="" class="rounded-circle mb-6 img-fluid" srcset="i/gui.png 2x">
+                    <h4 class="mb-2 text-light-1">
+                        Louis Kim
+                    </h4>
+                    <p class="text-bg-3">
+                        Software Development Expertise
+                    </p>
+                    <div class="row my-4">
+                        <div class="col-12">
+                            <a href="https://www.linkedin.com/in/louisalbankim/" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="3em" viewBox="0 0 448 512"
+                                    class="fill-bg-3">
+                                    
+                                    <path
+                                        d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1.25em" viewBox="0 0 448 512" class="fill-bg-3">
+                                
+                                <path
+                                    d="M288 64c0 17.7-14.3 32-32 32H32C14.3 96 0 81.7 0 64S14.3 32 32 32H256c17.7 0 32 14.3 32 32zm0 256c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H256c17.7 0 32 14.3 32 32zM0 192c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 448c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="col-10">
+                            <div class="text-start text-bg-3 fs-3">
+                                15&#43; years of experience building and running software, leading teams for enterprises and startups with a strong focus on quality and simplicity.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1.25em" viewBox="0 0 512 512" class="fill-bg-3">
+                                
+                                <path
+                                    d="M176 56V96H336V56c0-4.4-3.6-8-8-8H184c-4.4 0-8 3.6-8 8zM128 96V56c0-30.9 25.1-56 56-56H328c30.9 0 56 25.1 56 56V96v32V480H128V128 96zM64 96H96V480H64c-35.3 0-64-28.7-64-64V160c0-35.3 28.7-64 64-64zM448 480H416V96h32c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="col-10">
+                            <div class="text-start text-bg-3 fs-3">
+                                Bouygues Telecom, Le Figaro, Hivebrite
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            <div class="col-sm-7 col-md-4 mb-12 mb-md-0" data-aos="fade-down" data-aos-delay="400">
+                <svg xmlns="http://www.w3.org/2000/svg" height="300" viewBox="0 0 512 512" class="fill-dark-1 mb-6">
+                    
+                    <path
+                        d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm169.8-90.7c7.9-22.3 29.1-37.3 52.8-37.3h58.3c34.9 0 63.1 28.3 63.1 63.1c0 22.6-12.1 43.5-31.7 54.8L280 264.4c-.2 13-10.9 23.6-24 23.6c-13.3 0-24-10.7-24-24V250.5c0-8.6 4.6-16.5 12.1-20.8l44.3-25.4c4.7-2.7 7.6-7.7 7.6-13.1c0-8.4-6.8-15.1-15.1-15.1H222.6c-3.4 0-6.4 2.1-7.5 5.3l-.4 1.2c-4.4 12.5-18.2 19-30.6 14.6s-19-18.2-14.6-30.6l.4-1.2zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z">
+                    </path>
+                </svg>
+                <h4 class="mb-2 text-light-1 font-heading fst-italic fw-light">
+                    Actively Recruiting
+                </h4>
+                <p class="text-bg-3">
+                    Security Management Expertise
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <footer class="pt-md-10 py-8 text-center text-lg-start bg-bg-1">
+    <div class="container">
+        <div class="row flex-column flex-lg-row align-items-center justify-content-center">
+            <div class="mb-4 mb-lg-0 col-lg-5 order-1 order-lg-0" data-aos="fade-down" data-aos-delay="0">
+            </div>
+            <div class="mb-4 mb-lg-0 col-lg-2 text-center order-0 order-lg-1" data-aos="fade-down" data-aos-delay="150">
+                <a href="#">
+                    <img src="i/logo-somari-white-small.png" alt="" class="img-fluid"
+                        srcset="i/logo-somari-white-small.png 2x">
+                </a>
+            </div>
+            <div class="col-lg-5 text-lg-end order-2" data-aos="fade-down" data-aos-delay="250">
+            </div>
+        </div>
+        <div class="border-bottom border-light-3 mt-6 mb-6" data-aos="fade-down" data-aos-delay="400">
+        </div>
+        <p class="text-center fs-5 mb-0 text-light-2" data-aos="fade-down" data-aos-delay="500">
+            Copyright © Somari
+        </p>
+    </div>
+</footer>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    
+    <script src="js/scripts.min.js"></script>
+
+    
+    <script src="https://static.app/js/static-forms.js" type="text/javascript"></script>
+
+    <script async src="https://analytics.somari.io/tracker.js" data-ackee-server="https://analytics.somari.io"
+        data-ackee-domain-id="f0803491-f159-478c-b0e4-278dc715c3f8"
+        data-ackee-opts='{ "ignoreLocalhost": true, "detailed": true }'></script>
+    
+    
+    <script src="https://static.app/js/static-forms.js" type="text/javascript"></script>
+</body>
+
+</html>

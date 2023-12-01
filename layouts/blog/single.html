@@ -1,0 +1,44 @@
+{{ define "main" }}
+
+<section class="py-10 py-lg-20 bg-bg-1">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 col-xl-8">
+                <div class="mb-10 row justify-content-between">
+                    <div class="col-auto aos-init aos-animate" data-aos="fade-down" data-aos-delay="0">
+                        <a href="/blog" class="text-dark-1 text-light-2">
+                            Back to blog
+                        </a>
+                    </div>
+                </div>
+                <h1 class="display-3 mb-6 mb-md-15 text-light-1 aos-init aos-animate" data-aos="fade-down"
+                    data-aos-delay="500">
+                    {{ .Title }}
+                </h1>
+                <div class="mb-10 row justify-content-between">
+                    <div class="col-auto aos-init aos-animate" data-aos="fade-down" data-aos-delay="0">
+                        <a href="#" class="text-dark-1 text-light-2">
+                            Design
+                        </a>
+                        <span class="text-light-2">
+                            /
+                        </span>
+                        <span class="text-light-2">
+                            Branding
+                        </span>
+                    </div>
+                    <div class="col-auto aos-init aos-animate" data-aos="fade-down" data-aos-delay="250">
+                        <p class="mb-0 text-light-2">
+                            {{ .PublishDate.Format "January 2, 2006" }}
+                        </p>
+                    </div>
+                </div>
+                <div class="blog-content">
+                    {{ .Content }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{ end }}
