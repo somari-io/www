@@ -671,6 +671,9 @@ $carousel-indicator-circle-hit-area-height: (2rem - $carousel-indicator-circle-w
 
 	img {
 		@extend .img-fluid;
+		@extend .mt-2;
+		@extend .mb-2;
+		@extend .rounded-1;
 	}
 }
 
