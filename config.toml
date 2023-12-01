@@ -175,3 +175,29 @@ baseline = "Security Management For NGOs"
         [params.team.missing]
         name = "Actively Recruiting"
         expertise = "Security Management Expertise"
+
+[menus]
+    [[menus.main]]
+    name = "Home"
+    pageRef = "/"
+    weight = 10
+
+    [[menus.main]]
+    name = "Features"
+    pageRef = "/#features"
+    weight = 20
+
+    [[menus.main]]
+    name = "Connect"
+    pageRef = "/#connect"
+    weight = 30
+
+    [[menus.main]]
+    name = "Team"
+    pageRef = "/#team"
+    weight = 40
+
+    [[menus.main]]
+    name = "Blog"
+    pageRef = "/blog"
+    weight = 50

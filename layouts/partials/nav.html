@@ -1,3 +1,5 @@
+{{ $is_home := .IsHome }}
+
 <nav class="py-4 py-lg-7 bg-bg-1 sticky-top">
     <div class="d-block d-lg-none">
         <div class="container">
@@ -14,7 +16,7 @@
                     </a>
                 </div>
                 <div class="col-6 text-center" data-aos="fade-down" data-aos-delay="250">
-                    <a href="#">
+                    <a href="/">
                         <img src="/i/logo-somari-white-small.png" srcset="/i/logo-somari-white-small.png 2x" alt=""
                             class="img-fluid" data-aos="fade-down" data-aos-delay="0">
                     </a>
@@ -26,7 +28,7 @@
     </div>
     <div class="offcanvas offcanvas-start custom-dark-offcanvas-bg" id="custom-id-pj3gwlaw" aria-hidden="true">
         <div class="offcanvas-header">
-            <a href="#">
+            <a href="/">
                 <img src="/i/logo-somari-white-small.png" alt="" class="img-fluid"
                     srcset="/i/logo-somari-white-small.png 2x">
             </a>
@@ -40,66 +42,40 @@
             </a>
         </div>
         <div class="offcanvas-body">
+            {{ range .Site.Menus.main}}
             <div>
-                <a href="#" class="fw-bold py-2 d-inline-block text-light-1">
-                    Home
+                {{ $fm := (eq .PageRef "/") }}
+                {{ if and $is_home $fm }}
+                    <a href="/#hero" class="fw-bold py-2 d-inline-block text-light-1">
+                {{ else }}
+                    <a href="{{ .PageRef }}" class="fw-bold py-2 d-inline-block text-light-1">
+                {{ end}}
+                    {{ .Name }}
                 </a>
             </div>
-            <div>
-                <a href="#focus_areas" class="fw-bold py-2 d-inline-block text-light-1">
-                    Focus Areas
-                </a>
-            </div>
-            <div>
-                <a href="#mobile" class="fw-bold py-2 d-inline-block text-light-1">
-                    Mobile
-                </a>
-            </div>
-            <div>
-                <a href="#features" class="fw-bold py-2 d-inline-block text-light-1">
-                    Features
-                </a>
-            </div>
-            <div>
-                <a href="#connect" class="fw-bold py-2 d-inline-block text-light-1">
-                    Connect
-                </a>
-            </div>
-            <div>
-                <a href="#team" class="fw-bold py-2 d-inline-block text-light-1">
-                    Team
-                </a>
-            </div>
+            {{ end }}
         </div>
     </div>
     <div class="d-none d-lg-block">
         <div class="container">
             <div class="row justify-content-between align-items-center">
                 <div class="col-2">
-                    <a href="#">
-                        <img src="/i/logo-somari-white.png" srcset="/i/logo-somari-white.png 2x" alt="" class="img-fluid"
-                            data-aos="fade-down" data-aos-delay="0">
+                    <a href="/">
+                        <img src="/i/logo-somari-white.png" srcset="/i/logo-somari-white.png 2x" alt=""
+                            class="img-fluid" data-aos="fade-down" data-aos-delay="0">
                     </a>
                 </div>
                 <div class="col-8 d-flex justify-content-end">
-                    <a href="#hero" class="fw-bold mx-4 text-light-1" data-aos="fade-down" data-aos-delay="150">
-                        Home
-                    </a>
-                    <a href="#focus_areas" class="fw-bold mx-4 text-light-1" data-aos="fade-down" data-aos-delay="250">
-                        Focus Areas
-                    </a>
-                    <a href="#mobile" class="fw-bold mx-4 text-light-1" data-aos="fade-down" data-aos-delay="250">
-                        Mobile
-                    </a>
-                    <a href="#features" class="fw-bold mx-4 text-light-1" data-aos="fade-down" data-aos-delay="400">
-                        Features
-                    </a>
-                    <a class="fw-bold mx-4 text-light-1" data-aos="fade-down" data-aos-delay="400" href="#connect">
-                        Connect
-                    </a>
-                    <a href="#team" class="fw-bold ms-4 text-light-1" data-aos="fade-down" data-aos-delay="500">
-                        Team
-                    </a>
+                    {{ range .Site.Menus.main }}
+                        {{ $fm := (eq .PageRef "/") }}
+                        {{ if and $is_home $fm }}
+                            <a href="/#hero" class="fw-bold mx-4 text-light-1" data-aos="fade-down" data-aos-delay="150">
+                        {{ else }}
+                            <a href="{{ .PageRef }}" class="fw-bold mx-4 text-light-1" data-aos="fade-down" data-aos-delay="150">
+                        {{ end }}
+                            {{ .Name }}
+                        </a>
+                    {{ end }}
                 </div>
             </div>
         </div>
