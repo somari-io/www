@@ -1,7 +1,7 @@
 ---
 title: "Building A PowerBI Dashboard To Explore ACLED Data"
 date: 2023-12-01T12:57:31+01:00
-draft: true
+draft: false
 summary: "PowerBI is a simple tool to create dashboards. Let's build one for ACLED's security incident dataset."
 tags:
 - PowerBI

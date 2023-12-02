@@ -6,23 +6,32 @@
     <description>Recent content on Somari</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 12 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://somari.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 01 Dec 2023 12:57:32 +0100</lastBuildDate><atom:link href="https://somari.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Exploring ACLED Data With PowerBI</title>
-      <link>https://somari.io/articles/acled-data-powerbi/</link>
-      <pubDate>Sun, 12 Nov 2023 00:00:00 +0000</pubDate>
+      <title>What Sector Experts Told Us</title>
+      <link>https://somari.io/blog/what-sector-experts-told-us/</link>
+      <pubDate>Fri, 01 Dec 2023 12:57:32 +0100</pubDate>
       
-      <guid>https://somari.io/articles/acled-data-powerbi/</guid>
-      <description>Acled</description>
+      <guid>https://somari.io/blog/what-sector-experts-told-us/</guid>
+      <description>The summary of a round of 8 interviews of security / access managament experts from prominent international NGOs.</description>
     </item>
     
     <item>
-      <title>Build A Risk Analysis Tool With Google Sheet</title>
-      <link>https://somari.io/articles/google-sheets-risk-analysis/</link>
-      <pubDate>Sat, 11 Nov 2023 00:00:00 +0000</pubDate>
+      <title>Building A PowerBI Dashboard To Explore ACLED Data</title>
+      <link>https://somari.io/blog/powerbi-acled-data/</link>
+      <pubDate>Fri, 01 Dec 2023 12:57:31 +0100</pubDate>
       
-      <guid>https://somari.io/articles/google-sheets-risk-analysis/</guid>
-      <description>Google</description>
+      <guid>https://somari.io/blog/powerbi-acled-data/</guid>
+      <description>PowerBI is a simple tool to create dashboards. Let&amp;rsquo;s build one for ACLED&amp;rsquo;s security incident dataset.</description>
+    </item>
+    
+    <item>
+      <title>Creating A Risk Assessment Tool With Google Sheets</title>
+      <link>https://somari.io/blog/risk-analysis-google-spreadsheet/</link>
+      <pubDate>Fri, 01 Dec 2023 12:57:25 +0100</pubDate>
+      
+      <guid>https://somari.io/blog/risk-analysis-google-spreadsheet/</guid>
+      <description>Let&amp;rsquo;s see how far we can go in building a spreadsheet-based risk analysis tool.</description>
     </item>
     
   </channel>
