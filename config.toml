@@ -1,4 +1,4 @@
-baseURL = 'https://somari.io/'
+baseURL = 'https://somari.io'
 languageCode = 'en-us'
 title = 'Somari'
 
@@ -176,28 +176,28 @@ baseline = "Security Management For NGOs"
         name = "Actively Recruiting"
         expertise = "Security Management Expertise"
 
-[menus]
-    [[menus.main]]
-    name = "Home"
-    pageRef = "/"
-    weight = 10
+    [params.menus]
+        [params.menus.classes]
+        default = "fw-bold mx-4 text-light-1"
+        mobile = "fw-bold py-2 d-inline-block text-light-1"
 
-    [[menus.main]]
-    name = "Features"
-    pageRef = "/#features"
-    weight = 20
+        [params.menus.home]
+        name = "Home"
+        pageRef = ""
+        anchor = "#hero"
 
-    [[menus.main]]
-    name = "Connect"
-    pageRef = "/#connect"
-    weight = 30
+        [[params.menus.homepage]]
+        name = "Features"
+        pageRef = "#features"
 
-    [[menus.main]]
-    name = "Team"
-    pageRef = "/#team"
-    weight = 40
+        [[params.menus.homepage]]
+        name = "Connect"
+        pageRef = "#connect"
 
-    [[menus.main]]
-    name = "Blog"
-    pageRef = "/blog"
-    weight = 50
+        [[params.menus.homepage]]
+        name = "Team"
+        pageRef = "#team"
+
+        [[params.menus.main]]
+        name = "Blog"
+        pageRef = "blog"

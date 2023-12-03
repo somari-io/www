@@ -1,5 +1,8 @@
-{{ $base := .Site.BaseURL }}
+{{ $class_default := .Site.Params.menus.classes.default }}
+{{ $class_mobile := .Site.Params.menus.classes.mobile }}
 {{ $is_home := .IsHome }}
+{{ $base_home := cond ($is_home) "" .Site.BaseURL }}
+{{ $base_url := .Site.BaseURL }}
 
 <nav class="py-4 py-lg-7 bg-bg-1 sticky-top">
     <div class="d-block d-lg-none">
@@ -43,20 +46,19 @@
             </a>
         </div>
         <div class="offcanvas-body">
-            {{ range .Site.Menus.main}}
-            <div>
-                {{ $fm := (eq .PageRef "/") }}
+            
                 {{ if $is_home }}
-                    {{ if $fm }}
-                        <a href="/#hero" class="fw-bold py-2 d-inline-block text-light-1">{{ .Name }}</a>
-                    {{ else }}
-                        <a href="{{ .PageRef }}" class="fw-bold py-2 d-inline-block text-light-1">{{ .Name }}</a>
-                    {{ end }}
-                {{ else }}
-                    <a href="{{ $base }}{{ .PageRef }}" class="fw-bold py-2 d-inline-block text-light-1">{{ .Name }}</a>
-                {{ end}}
+                <div><a href="{{ $base_home }}{{ .Site.Params.menus.home.pageRef }}{{ .Site.Params.menus.home.anchor }}" class="{{ $class_mobile }}">{{ .Site.Params.menus.home.name }}</a></div>
+                {{ else }}                        
+                <div><a href="{{ $base_home }}{{ .Site.Params.menus.home.pageRef }}" class="{{ $class_mobile }}">{{ .Site.Params.menus.home.name }}</a></div>
+                {{ end }}
+                {{ range .Site.Params.menus.homepage }}
+                <div><a href="{{ $base_home }}{{ .pageRef }}" class="{{ $class_mobile }}">{{ .name }}</a></div>
+                {{ end }}
+                {{ range .Site.Params.menus.main }}
+                <div><a href="{{ $base_url }}{{ .pageRef }}" class="{{ $class_mobile }}">{{ .name }}</a></div>
+                {{ end }}
             </div>
-            {{ end }}
         </div>
     </div>
     <div class="d-none d-lg-block">
@@ -69,17 +71,16 @@
                     </a>
                 </div>
                 <div class="col-8 d-flex justify-content-end">
-                    {{ range .Site.Menus.main }}
-                        {{ $fm := (eq .PageRef "/") }}
-                        {{ if $is_home }}
-                            {{ if $fm }}
-                                <a href="/#hero" class="fw-bold mx-4 text-light-1" data-aos="fade-down" data-aos-delay="150">{{ .Name }}</a>
-                            {{ else }}
-                                <a href="{{ .PageRef }}" class="fw-bold mx-4 text-light-1" data-aos="fade-down" data-aos-delay="150">{{ .Name }}</a>
-                            {{ end }}
-                        {{ else }}
-                            <a href="{{ $base }}{{ .PageRef }}" class="fw-bold mx-4 text-light-1" data-aos="fade-down" data-aos-delay="150">{{ .Name }}</a>
-                        {{ end }}
+                    {{ if $is_home }}
+                        <a href="{{ $base_home }}{{ .Site.Params.menus.home.pageRef }}{{ .Site.Params.menus.home.anchor }}" class="{{ $class_default }}" data-aos="fade-down" data-aos-delay="150">{{ .Site.Params.menus.home.name }}</a>
+                    {{ else }}                        
+                        <a href="{{ $base_home }}{{ .Site.Params.menus.home.pageRef }}" class="{{ $class_default }}" data-aos="fade-down" data-aos-delay="150">{{ .Site.Params.menus.home.name }}</a>
+                    {{ end }}
+                    {{ range .Site.Params.menus.homepage }}
+                        <a href="{{ $base_home }}{{ .pageRef }}" class="{{ $class_default }}" data-aos="fade-down" data-aos-delay="150">{{ .name }}</a>
+                    {{ end }}
+                    {{ range .Site.Params.menus.main }}
+                        <a href="{{ $base_url }}{{ .pageRef }}" class="{{ $class_default }}" data-aos="fade-down" data-aos-delay="150">{{ .name }}</a>
                     {{ end }}
                 </div>
             </div>
