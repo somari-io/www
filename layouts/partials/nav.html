@@ -1,3 +1,4 @@
+{{ $base := .Site.BaseURL }}
 {{ $is_home := .IsHome }}
 
 <nav class="py-4 py-lg-7 bg-bg-1 sticky-top">
@@ -45,13 +46,15 @@
             {{ range .Site.Menus.main}}
             <div>
                 {{ $fm := (eq .PageRef "/") }}
-                {{ if and $is_home $fm }}
-                    <a href="/#hero" class="fw-bold py-2 d-inline-block text-light-1">
+                {{ if $is_home }}
+                    {{ if $fm }}
+                        <a href="/#hero" class="fw-bold py-2 d-inline-block text-light-1">{{ .Name }}</a>
+                    {{ else }}
+                        <a href="{{ .PageRef }}" class="fw-bold py-2 d-inline-block text-light-1">{{ .Name }}</a>
+                    {{ end }}
                 {{ else }}
-                    <a href="{{ .PageRef }}" class="fw-bold py-2 d-inline-block text-light-1">
+                    <a href="{{ $base }}{{ .PageRef }}" class="fw-bold py-2 d-inline-block text-light-1">{{ .Name }}</a>
                 {{ end}}
-                    {{ .Name }}
-                </a>
             </div>
             {{ end }}
         </div>
@@ -61,20 +64,22 @@
             <div class="row justify-content-between align-items-center">
                 <div class="col-2">
                     <a href="/">
-                        <img src="/i/logo-somari-white.png" srcset="/i/logo-somari-white.png 2x" alt=""
+                        <img src="{{ .Site.BaseURL }}i/logo-somari-white.png" srcset="{{ .Site.BaseURL }}i/logo-somari-white.png 2x" alt=""
                             class="img-fluid" data-aos="fade-down" data-aos-delay="0">
                     </a>
                 </div>
                 <div class="col-8 d-flex justify-content-end">
                     {{ range .Site.Menus.main }}
                         {{ $fm := (eq .PageRef "/") }}
-                        {{ if and $is_home $fm }}
-                            <a href="/#hero" class="fw-bold mx-4 text-light-1" data-aos="fade-down" data-aos-delay="150">
+                        {{ if $is_home }}
+                            {{ if $fm }}
+                                <a href="/#hero" class="fw-bold mx-4 text-light-1" data-aos="fade-down" data-aos-delay="150">{{ .Name }}</a>
+                            {{ else }}
+                                <a href="{{ .PageRef }}" class="fw-bold mx-4 text-light-1" data-aos="fade-down" data-aos-delay="150">{{ .Name }}</a>
+                            {{ end }}
                         {{ else }}
-                            <a href="{{ .PageRef }}" class="fw-bold mx-4 text-light-1" data-aos="fade-down" data-aos-delay="150">
+                            <a href="{{ $base }}{{ .PageRef }}" class="fw-bold mx-4 text-light-1" data-aos="fade-down" data-aos-delay="150">{{ .Name }}</a>
                         {{ end }}
-                            {{ .Name }}
-                        </a>
                     {{ end }}
                 </div>
             </div>
