@@ -6,7 +6,7 @@
     <title>{{ .Site.Title }} - {{ .Site.Params.baseline }}</title>
     <meta name="description" content="Somari is the first software solution dedicated to managing the security of NGO staff on the field.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="/i/icon-256.png">
+    <link rel="icon" href="{{ .Site.BaseURL }}i/icon-256.png">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@100;200;300;400;500;600;700;800;900&family=DM+Sans:wght@100;200;300;400;500;600;700;800;900&subset=latin&display=swap"
@@ -26,15 +26,15 @@
     <meta property="og:title" content="Security Management For NGOs">
     <meta property="og:description"
         content="Somari is the first web & mobile solution to dedicated to managing the security of NGO staff.">
-    <meta property="og:url" content="https://somari.io">
-    <meta property="og:image" content="https://somari.io/i/logo-somari-dark-text-social.png">
+    <meta property="og:url" content="{{ .Site.BaseURL }}">
+    <meta property="og:image" content="{{ .Site.BaseURL }}i/logo-somari-dark-text-social.png">
     <meta name='twitter:card' content='summary_large_image'>
     <meta name="twitter:title" content="Security Management For NGOs">
     <meta name="twitter:description"
         content="Somari is the first web & mobile solution to dedicated to managing the security of NGO staff.">
     <meta property="twitter:domain" content="somari.io">
-    <meta property="twitter:url" content="https://somari.io">
-    <meta name="twitter:image" content="https://somari.io/i/logo-somari-dark-text-social.png">
+    <meta property="twitter:url" content="{{ .Site.BaseURL }}">
+    <meta name="twitter:image" content="{{ .Site.BaseURL }}i/logo-somari-dark-text-social.png">
 </head>
 
 <body>
