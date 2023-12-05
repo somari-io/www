@@ -2,7 +2,7 @@
     title="{{ .Get "title" }}"
     width="100%"
     height="{{ .Get "height" }}"
-    src="https://app.powerbi.com/view?r={{ .Get "id" }}"
+    src="https://app.powerbi.com/view?r={{ .Get "id" }}&pageName={{ .Get "page" }}"
     frameborder="0"
     allowFullScreen="true">
 </iframe>

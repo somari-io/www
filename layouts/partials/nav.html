@@ -4,7 +4,6 @@
 {{ $base_home := cond ($is_home) "" .Site.BaseURL }}
 {{ $base_url := .Site.BaseURL }}
 
-
 <nav class="sticky-top py-4 py-lg-7 bg-bg-1">
     <div class="d-block d-lg-none">
         <div class="container">
@@ -21,7 +20,7 @@
                     </a>
                 </div>
                 <div class="col-6 text-center" data-aos="fade-down" data-aos-delay="250">
-                    <a href="#">
+                    <a href="{{ .Site.BaseURL }}">
                         <img src="{{ .Site.BaseURL }}i/logo-somari-white-small.png" srcset="{{ .Site.BaseURL }}i/logo-somari-white-small.png 2x" alt="" class="img-fluid"
                             data-aos="fade-down" data-aos-delay="0">
                     </a>
@@ -71,7 +70,7 @@
         <div class="container">
             <div class="row align-items-center justify-content-between">
                 <div class="col-2">
-                    <a href="#">
+                    <a href="{{ .Site.BaseURL }}">
                         <img src="{{ .Site.BaseURL }}i/logo-somari-white-small.png" srcset="{{ .Site.BaseURL }}i/logo-somari-white-small.png 2x" alt="" class="img-fluid"
                             data-aos="fade-down" data-aos-delay="0">
                     </a>

@@ -1,6 +1,6 @@
 ---
 title: "Building A PowerBI Dashboard To Explore ACLED Data"
-date: 2023-12-01T12:57:31+01:00
+date: 2023-12-03
 draft: false
 summary: "PowerBI is a simple tool to create dashboards. Let's build one for ACLED's security incident dataset."
 tags:
@@ -35,4 +35,5 @@ Porttitor leo a diam sollicitudin tempor id eu nisl. Hac habitasse platea dictum
 
 Enim facilisis gravida neque convallis a cras semper auctor neque. Scelerisque purus semper eget duis at tellus at. Eget est lorem ipsum dolor sit. Et malesuada fames ac turpis egestas maecenas pharetra convallis posuere. Commodo viverra maecenas accumsan lacus vel facilisis volutpat est. Massa sapien faucibus et molestie ac. Suspendisse in est ante in nibh mauris cursus mattis molestie. Mauris rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque. Sed blandit libero volutpat sed cras ornare arcu dui. Eget aliquet nibh praesent tristique magna sit amet purus gravida. Egestas erat imperdiet sed euismod nisi. Maecenas sed enim ut sem viverra aliquet eget sit amet. In egestas erat imperdiet sed euismod nisi porta. Urna et pharetra pharetra massa massa ultricies mi quis. Platea dictumst quisque sagittis purus sit amet volutpat consequat. Aliquam id diam maecenas ultricies mi eget mauris pharetra. Cursus mattis molestie a iaculis. Et tortor consequat id porta nibh. Ut pharetra sit amet aliquam. In pellentesque massa placerat duis ultricies lacus sed turpis.
 
-{{< powerbi title="ACLED Data On PowerBI" width="1024" height="612" id="eyJrIjoiYWJlODYyYjEtYmFmNi00OWRjLWE4MzEtZDE1Yzc4YTU3MWJkIiwidCI6ImQ1ZTMzZDFkLWY4MjEtNDA1Zi1iMDkzLWYzZDFmNjU5MDhkNSJ9" >}}
+{{< powerbi title="ACLED Data On PowerBI" width="1024" height="612" id="eyJrIjoiYWJlODYyYjEtYmFmNi00OWRjLWE4MzEtZDE1Yzc4YTU3MWJkIiwidCI6ImQ1ZTMzZDFkLWY4MjEtNDA1Zi1iMDkzLWYzZDFmNjU5MDhkNSJ9"
+page="ReportSectionfa246e5ec09c93d1740e">}}
