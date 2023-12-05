@@ -86,170 +86,171 @@ function initAnimations(duration){
 }
 
 // Init AJAX forms submit
-function ajaxFormInit(){
-	var forms = document.querySelectorAll("form.js-ajax-form");
-	if(forms.length){
-		forms.forEach(function(form) {
-			form.addEventListener("submit", function(event){
-				event.preventDefault();
-				if(form.getAttribute("data-sitekey")){ // if the form is protected with gRecapcha V3
-					var gRecapchaInput = form.querySelector("input[name='g-recaptcha-response']");
-					if(gRecapchaInput){ // We have an input for gRecaptcha token inside form
-						document.querySelector(".grecaptcha-badge").style.display = "block";
-						// Generate gRecaptcha token
-						grecaptcha.execute(form.getAttribute("data-sitekey"), {action: 'submit'}).then(function(token) {
-							gRecapchaInput.setAttribute("value",token);
-							ajaxFormSubmit(form);
-						});
-					}else{ // No input for gRecaptcha token inside form = we need to create it
-						var gRecapchaScript = document.getElementById("grecaptcha-"+form.getAttribute("data-sitekey"));
-						if(!gRecapchaScript){ // Load gRecaptcha JS file
-							var head = document.querySelector("head");
-							gRecapchaScript = document.createElement("script");
-							gRecapchaScript.setAttribute("src","https://www.google.com/recaptcha/api.js?render="+form.getAttribute("data-sitekey"));
-							gRecapchaScript.setAttribute("id","grecaptcha-"+form.getAttribute("data-sitekey"));
-							gRecapchaScript.addEventListener("load",function(){
-								grecaptcha.ready(function() {
-									// Generate gRecaptcha token, create input, send form
-									grecaptcha.execute(form.getAttribute("data-sitekey"), {action: 'submit'}).then(function(token) {
-										gRecapchaInput = document.createElement("input");
-										gRecapchaInput.setAttribute("type","hidden");
-										gRecapchaInput.setAttribute("name","g-recaptcha-response");
-										gRecapchaInput.setAttribute("value",token);
-										form.append(gRecapchaInput);
-										ajaxFormSubmit(form);
-									});
-								});
-							});
-							head.append(gRecapchaScript);
-						}else{
-							document.querySelector(".grecaptcha-badge").style.display = "block";
-							// Generate gRecaptcha token, create input, send form
-							grecaptcha.execute(form.getAttribute("data-sitekey"), {action: 'submit'}).then(function(token) {
-								gRecapchaInput = document.createElement("input");
-								gRecapchaInput.setAttribute("type","hidden");
-								gRecapchaInput.setAttribute("name","g-recaptcha-response");
-								gRecapchaInput.setAttribute("value",token);
-								form.append(gRecapchaInput);
-								ajaxFormSubmit(form);
-							});
-						}
-					}
-				}else{ // no gRecaptcha protection - just submit the form
-					ajaxFormSubmit(form);
-				}
-			});
-		});
-	}
-}
-// Submit AJAX form data
-function ajaxFormSubmit(form){
-	var	formData = new FormData(form);
+// function ajaxFormInit(){
+// 	var forms = document.querySelectorAll("form.js-ajax-form");
+// 	if(forms.length){
+// 		forms.forEach(function(form) {
+// 			form.addEventListener("submit", function(event){
+// 				event.preventDefault();
+// 				if(form.getAttribute("data-sitekey")){ // if the form is protected with gRecapcha V3
+// 					var gRecapchaInput = form.querySelector("input[name='g-recaptcha-response']");
+// 					if(gRecapchaInput){ // We have an input for gRecaptcha token inside form
+// 						document.querySelector(".grecaptcha-badge").style.display = "block";
+// 						// Generate gRecaptcha token
+// 						grecaptcha.execute(form.getAttribute("data-sitekey"), {action: 'submit'}).then(function(token) {
+// 							gRecapchaInput.setAttribute("value",token);
+// 							ajaxFormSubmit(form);
+// 						});
+// 					}else{ // No input for gRecaptcha token inside form = we need to create it
+// 						var gRecapchaScript = document.getElementById("grecaptcha-"+form.getAttribute("data-sitekey"));
+// 						if(!gRecapchaScript){ // Load gRecaptcha JS file
+// 							var head = document.querySelector("head");
+// 							gRecapchaScript = document.createElement("script");
+// 							gRecapchaScript.setAttribute("src","https://www.google.com/recaptcha/api.js?render="+form.getAttribute("data-sitekey"));
+// 							gRecapchaScript.setAttribute("id","grecaptcha-"+form.getAttribute("data-sitekey"));
+// 							gRecapchaScript.addEventListener("load",function(){
+// 								grecaptcha.ready(function() {
+// 									// Generate gRecaptcha token, create input, send form
+// 									grecaptcha.execute(form.getAttribute("data-sitekey"), {action: 'submit'}).then(function(token) {
+// 										gRecapchaInput = document.createElement("input");
+// 										gRecapchaInput.setAttribute("type","hidden");
+// 										gRecapchaInput.setAttribute("name","g-recaptcha-response");
+// 										gRecapchaInput.setAttribute("value",token);
+// 										form.append(gRecapchaInput);
+// 										ajaxFormSubmit(form);
+// 									});
+// 								});
+// 							});
+// 							head.append(gRecapchaScript);
+// 						}else{
+// 							document.querySelector(".grecaptcha-badge").style.display = "block";
+// 							// Generate gRecaptcha token, create input, send form
+// 							grecaptcha.execute(form.getAttribute("data-sitekey"), {action: 'submit'}).then(function(token) {
+// 								gRecapchaInput = document.createElement("input");
+// 								gRecapchaInput.setAttribute("type","hidden");
+// 								gRecapchaInput.setAttribute("name","g-recaptcha-response");
+// 								gRecapchaInput.setAttribute("value",token);
+// 								form.append(gRecapchaInput);
+// 								ajaxFormSubmit(form);
+// 							});
+// 						}
+// 					}
+// 				}else{ // no gRecaptcha protection - just submit the form
+// 					ajaxFormSubmit(form);
+// 				}
+// 			});
+// 		});
+// 	}
+// }
+// // Submit AJAX form data
+// function ajaxFormSubmit(form){
+// 	var	formData = new FormData(form);
 		
-	if(form.method.toLowerCase()!="post"){
-		ajaxFormSubmitResult('AJAX form submit works only with the "post" method set.',form);
-		return false;
-	}
+// 	if(form.method.toLowerCase()!="post"){
+// 		ajaxFormSubmitResult('AJAX form submit works only with the "post" method set.',form);
+// 		return false;
+// 	}
 	
-	// form fields validation
-	var fields = form.querySelectorAll("input, textarea, select");
-	fields.forEach(function(field) {
-		if(
-			field.required && field.value=="" || 
-			field.required && field.type=="checkbox" && field.checked===false || 
-			field.validity.valid!==true
-		){
-			ajaxFormSubmitResult('Not all required fields were filled or filled incorrectly.',form);
-			return false;
-		}
-	});
+// 	// form fields validation
+// 	var fields = form.querySelectorAll("input, textarea, select");
+// 	fields.forEach(function(field) {
+// 		if(
+// 			field.required && field.value=="" || 
+// 			field.required && field.type=="checkbox" && field.checked===false || 
+// 			field.validity.valid!==true
+// 		){
+// 			ajaxFormSubmitResult('Not all required fields were filled or filled incorrectly.',form);
+// 			return false;
+// 		}
+// 	});
 	
-	// Make a request
-	var request = new XMLHttpRequest();
-	request.addEventListener("loadend", function(){
-		if(request.status!=200){
-			ajaxFormSubmitResult("Error: HTTP status code is "+request.status,form);
-		}else{
-			ajaxFormSubmitResult(request.responseText,form);
-		}
-	});
-	request.addEventListener("timeout", function(){
-		ajaxFormSubmitResult("Request timed out, data was not sent.",form);
-	});
-	request.open(form.method, form.action);
-    request.send(formData);
-}
+// 	// Make a request
+// 	var request = new XMLHttpRequest();
+// 	request.addEventListener("loadend", function(){
+// 		if(request.status!=200){
+// 			ajaxFormSubmitResult("Error: HTTP status code is "+request.status,form);
+// 		}else{
+// 			ajaxFormSubmitResult(request.responseText,form);
+// 		}
+// 	});
+// 	request.addEventListener("timeout", function(){
+// 		ajaxFormSubmitResult("Request timed out, data was not sent.",form);
+// 	});
+// 	request.open(form.method, form.action);
+//     request.send(formData);
+// }
 
-// Handle response of the AJAX form submit
-function ajaxFormSubmitResult(response,form){
-	var alerts = form.querySelectorAll(".js-form-result");
-	var text = '';
-	try{
-        JSON.parse(response);
-    }catch(e){
-		// show error - response is string (not a valid json)
-		console.error(response);
-		text = response;
-		ajaxFormShowResult(false, text, alerts);
-        return false;
-    }
-	response = JSON.parse(response);
-	if(response.success){ // no errors in form-handler file
-		if(response.success===true){
-			var el = form.querySelector(".js-form-result[data-result='success'] .js-form-alert-text");
-			text = el.getAttribute("data-default-text");
-			ajaxFormShowResult(true, text, alerts);
-		}else{
-			text = response.success;
-			ajaxFormShowResult(true, text, alerts);
-		}
-	}else if(response.error){ // there are some errors in form-handler file
-		text = response.error;
-		console.error(response);
-		ajaxFormShowResult(false, text, alerts);
-	}else{
-		text = "Unknown error. Please, check if your hosting supports PHP.";
-		console.error(text);
-		ajaxFormShowResult(false, text, alerts);
-	}
-}
+// // Handle response of the AJAX form submit
+// function ajaxFormSubmitResult(response,form){
+// 	var alerts = form.querySelectorAll(".js-form-result");
+// 	var text = '';
+// 	try{
+//         JSON.parse(response);
+//     }catch(e){
+// 		// show error - response is string (not a valid json)
+// 		console.error(response);
+// 		text = response;
+// 		ajaxFormShowResult(false, text, alerts);
+//         return false;
+//     }
+// 	response = JSON.parse(response);
+// 	if(response.success){ // no errors in form-handler file
+// 		if(response.success===true){
+// 			var el = form.querySelector(".js-form-result[data-result='success'] .js-form-alert-text");
+// 			text = el.getAttribute("data-default-text");
+// 			ajaxFormShowResult(true, text, alerts);
+// 		}else{
+// 			text = response.success;
+// 			ajaxFormShowResult(true, text, alerts);
+// 		}
+// 	}else if(response.error){ // there are some errors in form-handler file
+// 		text = response.error;
+// 		console.error(response);
+// 		ajaxFormShowResult(false, text, alerts);
+// 	}else{
+// 		text = "Unknown error. Please, check if your hosting supports PHP.";
+// 		console.error(text);
+// 		ajaxFormShowResult(false, text, alerts);
+// 	}
+// }
 
-// Show success / error alert with the response text after the form submit.
-function ajaxFormShowResult(success, text, alerts){
-	if(alerts.length){
-		alerts.forEach(function(_alert){
-			if(
-				success && _alert.getAttribute("data-result")=="success" || 
-				!success && _alert.getAttribute("data-result")=="error"
-			){
-				_alert.classList.remove("invisible");
-				_alert.classList.add("show");
-				var el = _alert.querySelector(".js-form-alert-text");
-				el.innerText = text;
-				setTimeout(function(){ // auto-hide after 5 seconds
-					_alert.classList.remove("show");
-					_alert.addEventListener("transitionend", function(){
-						if(!this.classList.contains("show")){
-							this.classList.add("invisible");							
-						}
-					});
-					if(document.querySelector(".grecaptcha-badge")){
-						document.querySelector(".grecaptcha-badge").style.display = "none";						
-					}
-				},5000);
-			}else{
-				_alert.classList.add("invisible");
-				_alert.classList.remove("show");
-			}
-		});
-	}
-} 
+// // Show success / error alert with the response text after the form submit.
+// function ajaxFormShowResult(success, text, alerts){
+// 	if(alerts.length){
+// 		alerts.forEach(function(_alert){
+// 			if(
+// 				success && _alert.getAttribute("data-result")=="success" || 
+// 				!success && _alert.getAttribute("data-result")=="error"
+// 			){
+// 				_alert.classList.remove("invisible");
+// 				_alert.classList.add("show");
+// 				var el = _alert.querySelector(".js-form-alert-text");
+// 				el.innerText = text;
+// 				setTimeout(function(){ // auto-hide after 5 seconds
+// 					_alert.classList.remove("show");
+// 					_alert.addEventListener("transitionend", function(){
+// 						if(!this.classList.contains("show")){
+// 							this.classList.add("invisible");							
+// 						}
+// 					});
+// 					if(document.querySelector(".grecaptcha-badge")){
+// 						document.querySelector(".grecaptcha-badge").style.display = "none";						
+// 					}
+// 				},5000);
+// 			}else{
+// 				_alert.classList.add("invisible");
+// 				_alert.classList.remove("show");
+// 			}
+// 		});
+// 	}
+// } 
 
 // document.ready section
+console.log("Hello");
 document.addEventListener("DOMContentLoaded", function(){
 	setBackgrounds();
 	switchControlSlider();
 	stopYouTubeOnModalClose();
 	initAnimations();
-	ajaxFormInit();
+	// ajaxFormInit();
 });

@@ -4,6 +4,7 @@ title = 'Somari'
 
 [params]
 baseline = "Security Management For NGOs"
+linkedin = "https://www.linkedin.com/company/somari-io/"
 
     [params.hero]
     title = "We are building the first software solution dedicated to managing the security of NGO staff."
@@ -138,21 +139,11 @@ baseline = "Security Management For NGOs"
         icon = "M16 64C16 28.7 44.7 0 80 0H304c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H80c-35.3 0-64-28.7-64-64V64zM144 448c0 8.8 7.2 16 16 16h64c8.8 0 16-7.2 16-16s-7.2-16-16-16H160c-8.8 0-16 7.2-16 16zM304 64H80V384H304V64z"
         delay = "1000"
     
-    [params.form]
-    title = "We are continuously reaching out to leading NGOs to better understand their practices, pain points and digital needs."
-    subtitle = "We'd be thrilled to have the opportunity to chat with you. Let's connect and we will get back to you shortly."
-    success_message = "Thanks. We will get back to you shortly!"
-    error_message = "Opps! Something went wrong. Contact contact@somari.io directly."
-    cta = "Let's Connect!"
-    data_privacy = "We will never share your email with anyone, ever."
-        [params.form.placeholders]
-        name = "Name"
-        email = "Email"
+    [params.connect]
+    title = "Interested? We'd love to connect!"
+    subtitle = "Join our community on LinkedIn or just send us an email!."
+    email = "contact@somari.io"
 
-        [[params.form.reasons]]
-        name = "I want to know more"
-        [[params.form.reasons]]
-        name = "Interested for my organization"
     
     [params.team]
     title = "The Executive Team"
