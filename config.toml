@@ -3,7 +3,7 @@ languageCode = 'en-us'
 title = 'Somari'
 
 [params]
-baseline = "Security Management For NGOs"
+baseline = "Security Management Software For NGOs"
 linkedin = "https://www.linkedin.com/company/somari-io/"
 
     [params.hero]
