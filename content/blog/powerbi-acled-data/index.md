@@ -4,8 +4,8 @@ date: 2023-12-03
 draft: true
 summary: "PowerBI is a simple tool to create dashboards. Let's build one for ACLED's security incident dataset."
 tags:
-- PowerBI
-- ACLED
+  - PowerBI
+  - ACLED
 ---
 
 # Lorem ipsum dolor sit amet
@@ -23,7 +23,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 ### Lorem ipsum dolor sit amet
 
-Augue *interdum velit euismod* in **pellentesque massa** placerat duis. __Amet mattis__ _vulputate_ enim nulla aliquet porttitor lacus. Neque vitae tempus quam pellentesque nec nam aliquam sem et. Ac placerat vestibulum lectus mauris ultrices eros in cursus turpis. Libero enim sed faucibus turpis in. Semper eget duis at tellus at urna condimentum mattis. Consequat ac felis donec et odio pellentesque. Vitae auctor eu augue ut lectus arcu. Eu nisl nunc mi ipsum faucibus vitae aliquet. Semper auctor neque vitae tempus quam pellentesque.
+Augue _interdum velit euismod_ in **pellentesque massa** placerat duis. **Amet mattis** _vulputate_ enim nulla aliquet porttitor lacus. Neque vitae tempus quam pellentesque nec nam aliquam sem et. Ac placerat vestibulum lectus mauris ultrices eros in cursus turpis. Libero enim sed faucibus turpis in. Semper eget duis at tellus at urna condimentum mattis. Consequat ac felis donec et odio pellentesque. Vitae auctor eu augue ut lectus arcu. Eu nisl nunc mi ipsum faucibus vitae aliquet. Semper auctor neque vitae tempus quam pellentesque.
 
 Nam aliquam sem et tortor consequat id porta nibh venenatis. Ut eu sem integer vitae justo eget magna fermentum. Egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate. Orci a scelerisque purus semper eget duis at. At quis risus sed vulputate odio ut enim blandit. Porttitor eget dolor morbi non arcu risus quis. Feugiat in fermentum posuere urna. Egestas pretium aenean pharetra magna ac placerat vestibulum lectus. Tortor at auctor urna nunc. Ac felis donec et odio pellentesque diam. Et netus et malesuada fames ac turpis egestas sed.
 

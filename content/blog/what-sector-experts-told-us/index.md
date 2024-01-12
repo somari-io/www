@@ -4,8 +4,8 @@ date: 2023-12-02
 draft: false
 summary: "We asked security & access managament experts from prominent international NGOs to tell us about the main problems they face and the tools they use."
 tags:
-- Interviews
-- Tools
+  - Interviews
+  - Tools
 ---
 
 # Context
@@ -22,14 +22,14 @@ All interviewees were global Security Managers at HQ level.
 
 We interviewed a diverse set of organizations:
 
-* [GRET](https://gret.org/)
-* [Première Urgence Internationale](https://www.premiere-urgence.org/)
-* [Oxfam International](https://www.oxfam.org/en)
-* [Croix Rouge Française](https://www.croix-rouge.fr/)
-* [Medicos Del Mundo](https://www.medicosdelmundo.org/)
-* [The Lutherian World Federation](https://www.lutheranworld.org/)
-* [Handicap International / Humanity & Inclusion](https://www.handicap-international.fr/)
-* [La Chaine de l’Espoir](https://www.chainedelespoir.org/fr)
+- [GRET](https://gret.org/)
+- [Première Urgence Internationale](https://www.premiere-urgence.org/)
+- [Oxfam International](https://www.oxfam.org/en)
+- [Croix Rouge Française](https://www.croix-rouge.fr/)
+- [Medicos Del Mundo](https://www.medicosdelmundo.org/)
+- [The Lutherian World Federation](https://www.lutheranworld.org/)
+- [Handicap International / Humanity & Inclusion](https://www.handicap-international.fr/)
+- [La Chaine de l’Espoir](https://www.chainedelespoir.org/fr)
 
 # Organizational Structure & Chain Of Validation
 
@@ -43,11 +43,11 @@ Another commonality is the fact that the validation of Security Plans happens up
 
 All interviewees have very similar scoring models for risk assessments:
 
-* Scoring is the product of Probability and Impact of a risk.
-* An Initial Score assesses the situation before any mitigation measures are applied.
-* An Residual Score assesses the situation taking into account the mitigation measures being applied.
+- Scoring is the product of Probability and Impact of a risk.
+- An Initial Score assesses the situation before any mitigation measures are applied.
+- An Residual Score assesses the situation taking into account the mitigation measures being applied.
 
-Consensus on the fact that tools are just tools (content is what matters), but having a structured way to organize helps a lot. Excel is the tool of choice for risk assessments. In any case, the context analysis is the starting point of a risk assessment. 
+Consensus on the fact that tools are just tools (content is what matters), but having a structured way to organize helps a lot. Excel is the tool of choice for risk assessments. In any case, the context analysis is the starting point of a risk assessment.
 
 In addition to the risk assessment tool, a few organisations mentioned that they rank each base with a score from 1 to 5. They use predefined set of indicators to compute a weighted average to define the safety phase. That allows for comparing bases with a single metric.
 
@@ -59,13 +59,13 @@ We ask interviewees about the main problems/pain points they faced and whether i
 
 ## Lack Of Training
 
-  By far the main issue that was mentioned by interviewees, both for staff at field and HQ levels. Interestingly, multiple root causes where mentioned in the realms of budget, operational setup, human resources, hiring... The following diagram attempts to structure the relationships between them. 
+By far the main issue that was mentioned by interviewees, both for staff at field and HQ levels. Interestingly, multiple root causes where mentioned in the realms of budget, operational setup, human resources, hiring... The following diagram attempts to structure the relationships between them.
 
-  * Staff in charge of security are often not doing this full time. Their operational roles tend to take priority and little time is left on security management, including for trainings.
-  * The fact that there is no academic degree nor clear career path in security management creates high turnover (people do the job only for a limited time) and means that staff have to learn on the job. Both exacerbate the need for robust training approaches in organizations.
-  * Finally, the competition among NGOs for skilled workers is increasing due to the combination of high demand (NGOs are more exposed to high risk areas than ever) and limited offer (no clear career path).
+- Staff in charge of security are often not doing this full time. Their operational roles tend to take priority and little time is left on security management, including for trainings.
+- The fact that there is no academic degree nor clear career path in security management creates high turnover (people do the job only for a limited time) and means that staff have to learn on the job. Both exacerbate the need for robust training approaches in organizations.
+- Finally, the competition among NGOs for skilled workers is increasing due to the combination of high demand (NGOs are more exposed to high risk areas than ever) and limited offer (no clear career path).
 
-  ![Training TOC](training-toc.svg)
+![Training TOC](training-toc.svg)
 
 ## Low Scalability Of Tools & High Volume Of Information
 
@@ -95,7 +95,7 @@ What tools organizations use to process, compile and share the security related 
 
 **Tools** - [Microsoft SharePoint](https://www.microsoft.com/fr-fr/microsoft-365/sharepoint/collaboration)
 
-**Comment** - Organizing and appropriately sharing information is seen as growing (and major) concern. With different levels of maturity, SharePoint is being used as an access-controlled shared online drive all the organizations we interviewed. 
+**Comment** - Organizing and appropriately sharing information is seen as growing (and major) concern. With different levels of maturity, SharePoint is being used as an access-controlled shared online drive all the organizations we interviewed.
 
 ## App Development & Automation
 
@@ -107,7 +107,7 @@ What tools organizations use to process, compile and share the security related 
 
 **Tools** - [PowerBI](https://www.microsoft.com/en-us/power-platform/products/power-bi/)
 
-**Comment** - Building dashboards has become a must-have skill for most organizations. Security Management seems to be well onboard with that trend. Quite a few organizations we spoke to have built PowerBI dashboards to visualize their data on Incident Reports. 
+**Comment** - Building dashboards has become a must-have skill for most organizations. Security Management seems to be well onboard with that trend. Quite a few organizations we spoke to have built PowerBI dashboards to visualize their data on Incident Reports.
 
 ## Geographic Information Systems (GIS)
 
@@ -131,13 +131,13 @@ What tools organizations use to process, compile and share the security related 
 
 We also asked you the 3rd party services you were using. The ones with a ⭐ were mentioned the most.
 
-* [Sibylline](https://www.sibylline.co.uk/)
-* [Control Risks](https://www.controlrisks.com/)
-* [International SOS](https://www.internationalsos.fr/) ⭐
-* [Global Interagency Security Forum (GISF)](https://www.gisf.ngo/)
-* [ACAPS](https://www.acaps.org/) ⭐
-* [ACLED](https://acleddata.com/) ⭐
-* [INSO](https://ngosafety.org/) ⭐
-* [Aid Worker Security Database](https://aidworkersecurity.org/)
-* [Humanitarian Data Exchange (HDX)](https://data.humdata.org/)
-* [Africa Intelligence](https://www.africaintelligence.fr/)
+- [Sibylline](https://www.sibylline.co.uk/)
+- [Control Risks](https://www.controlrisks.com/)
+- [International SOS](https://www.internationalsos.fr/) ⭐
+- [Global Interagency Security Forum (GISF)](https://www.gisf.ngo/)
+- [ACAPS](https://www.acaps.org/) ⭐
+- [ACLED](https://acleddata.com/) ⭐
+- [INSO](https://ngosafety.org/) ⭐
+- [Aid Worker Security Database](https://aidworkersecurity.org/)
+- [Humanitarian Data Exchange (HDX)](https://data.humdata.org/)
+- [Africa Intelligence](https://www.africaintelligence.fr/)

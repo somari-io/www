@@ -3,6 +3,7 @@ languageCode = 'en-us'
 title = 'Somari'
 
 [params]
+description = "Somari is the first web & mobile solution to dedicated to managing the security of NGO staff...."
 baseline = "Security Management Software For NGOs"
 linkedin = "https://www.linkedin.com/company/somari-io/"
 
