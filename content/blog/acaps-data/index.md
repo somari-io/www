@@ -22,7 +22,7 @@ ACAPS data is available in 2 ways: direct download and via API.
 
 ## Direct Download
 
-You can browse the [list of data sets](https://www.acaps.org/en/data). Once you select a dataset the side panel allows you to download it. You might want to set the appropriate the data range before downloading the data. It takes a seconds for the downloads to start since the data file is generated on the fly (for datasets with date range selection). The side panel is also where you will get access to the codebooks and methology notes.
+You can browse the [list of data sets](https://www.acaps.org/en/data). Once you select a dataset the side panel allows you to download it. You might want to set the appropriate date range before downloading the data. It takes a few seconds for the downloads to start since the data file is generated on the fly (for datasets with date range selection). The side panel is also where you will get access to the codebooks and methology notes.
 
 You can find out more about how some of these datasets in the [Thematics section](https://www.acaps.org/en/thematics) of the ACAPS website.
 
@@ -33,7 +33,7 @@ All the ACAPS datasets are accessible via API with apparently no usage limitatio
 1. Create an account on their dedicated [API site](https://api.acaps.org/)
 2. Obtain your Authorization Token that will need to be provided with each request to authenticate you (see below)
 
-The API site offers a [Swagger](https://swagger.io/) generated documentation that allows you to try out every single API endpoint. You can use /api/v1/auth-token/ endpoint to generate your Authorization Token. This can obviously be done problematically but since your token is unique for your account, you might as well do it here at once. All the details to use the API can be found [here](https://api.acaps.org/using-the-api/).
+The API site offers a [Swagger](https://swagger.io/) generated documentation that allows you to try out every single API endpoint. You can use /api/v1/auth-token/ endpoint to generate your Authorization Token. This can obviously be done programatically but since your token is unique for your account, you might as well do it here at once. All the details to use the API can be found [here](https://api.acaps.org/using-the-api/).
 
 ![ACAPS Swagger Documentation](acaps-swagger.png)
 
