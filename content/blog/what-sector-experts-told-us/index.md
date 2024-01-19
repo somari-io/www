@@ -1,6 +1,6 @@
 ---
 title: "What Sector Experts Told Us"
-date: 2023-12-02
+date: 2024-01-24
 draft: false
 summary: "We asked security & access managament experts from prominent international NGOs to tell us about the main problems they face and the tools they use."
 tags:
