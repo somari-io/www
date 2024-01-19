@@ -8,8 +8,6 @@ tags:
   - Data
 ---
 
-420 × 356
-
 # What is ACAPS?
 
 ACAPS is an independent organization that provides humanitarian data, analysis and capacity building to support the work of the humanitarian community. They services include global analysis, anticipatory analysis, and scenario-building, as well as analysis of specific crises in multiple countries. Their Analysis Hubs focus on specific contexts, such as Afghanistan, Colombia, and Ukraine. Their work aims to strengthen the evidence base for decision-making and response-programming among humanitarian stakeholders.
